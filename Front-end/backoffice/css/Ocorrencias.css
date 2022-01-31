@@ -1,0 +1,45 @@
+.navbar.mb-4, .navbar.my-4 {
+    height: 60px !important;
+}
+
+.header-title{
+    color: #45464d;
+    padding-left: 5px;
+    padding-bottom: 3px;
+}
+
+.dropdownText {
+ padding-left: 5px;
+ color:#858796;
+ margin-bottom: 5px;
+}
+
+.dropdown-menu{
+    box-shadow: 0px 5px 14px -7px rgba(0, 0, 0, 0.75) !important;
+}
+
+li { cursor: pointer; }
+
+select[readonly] {
+  background: #eaecf4; 
+  pointer-events: none;
+  touch-action: none;
+}
+
+
+
+#tableMaterial {
+    max-width: 100%;
+}
+
+#addButton {
+    background: #012B77 !important; 
+    border: #012B77; 
+    position: center;
+    max-width: 120%;
+    height: 80%;
+    font-size: 90%;
+    padding-bottom: 4%;
+        margin-left:25%;
+    margin-right:25%;
+}

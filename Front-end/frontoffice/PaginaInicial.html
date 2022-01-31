@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <title> PSP - Página Inicial</title>
+        <meta name ="viewport" content = "width = device-width, initial-scale= 1">
+        
+        <link rel="stylesheet" href="PaginaInicial.css" type="text/css">
+        <link rel="stylesheet" href="headerfooter.css" type="text/css">
+       
+        <!-- Custom styles for this template-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+     
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+        
+<!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<!-- Add icon library -->
+<script src="https://kit.fontawesome.com/2545434131.js" crossorigin="anonymous"></script>
+
+    <!-- tab icon -->
+    <link rel="icon" href="https://www.psp.pt/PublishingImages/favicon.ico" type="image/icon type">
+    
+    </head>
+
+
+
+    <body>
+                  <!-- ======= Top Bar ======= -->
+        
+  <section id="topbar" class="d-none d-lg-block">
+       <div>
+        <p id="nrEmerg2"> 112</p>
+    <p id="nrEmerg1"><i class="fas fa-phone-alt" style="padding-right: 10px"></i>Número de Emergência: </p>
+    </div>
+  </section>
+
+ <header id="header">
+   
+    <div id="menu" class="container">
+
+<nav id="nav1" class="navbar navbar-expand-lg navbar-light bg-light">
+    <div id="nav-content" class="container">
+    <a class="navbar-brand" href="PaginaInicial.html">
+          <img src="https://www.psp.pt//PublishingImages/logo.svg" alt="">
+        </a>
+  <button class="navbar-toggler pull-xs-right hidden-md-up" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="Sobre.html">Sobre </a>
+      </li>
+      <li class="nav-item dropdown active" >
+        <a href="#" class="nav-link dropdown-toggle"  data-toggle="dropdown">Atividades</a>
+        <div class="dropdown-menu">
+            <a href="Ambiente.html" class="dropdown-item">Ambiente</a>
+            <a href="CãesPerigosos.html" class="dropdown-item">Cães Perigosos e Potencialmente Perigosos</a>
+            <a href="GestãoSegurança.html" class="dropdown-item">Gestão de Segurança em Grandes Eventos</a>
+            <a href="InvestigaçãoCriminal.html"class="dropdown-item">Investigação Criminal</a>
+            <a href="DefesaAnimal.html"class="dropdown-item">Programa de Defesa Animal</a>
+        </div>
+    </li>
+      <li class="nav-item dropdown active" >
+        <a href="#" class="nav-link dropdown-toggle"  data-toggle="dropdown">Serviços Online</a>
+        <div class="dropdown-menu">
+            <a href="https://seronline.psp.pt/" target="_blank" class="dropdown-item">Armas e Explosivos - SEROnline</a>
+            <a href="https://estouaqui.mai.gov.pt/Pages/index.htm" target="_blank"  class="dropdown-item">Estou Aqui</a>
+            <a href="https://sigesponline.psp.pt/" target="_blank"  class="dropdown-item">Segurança Privada - SIGESP</a>
+
+        </div>
+    </li>
+
+    </ul>
+      </div>
+      
+  </div>
+    <button id="loginCitizen" type="button" class="btn btn-primary" onclick="window.location.href='LoginCitizen.html'"><i class="fas fa-user fa-fw "></i> Área do Cidadão</button>   
+    <button id="loginColaborator" type="button" class="btn btn-primary" onclick="window.location.href='LoginColaborator.html'"><i class="fas fa-user-tie"></i> Login Colaboradores</button>
+
+</nav>
+</div>
+</header> 
+
+
+
+
+ <!-- slider -->
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="4000">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+      <!-- Slide One - Set the background image for this slide in the line below -->
+      <div class="carousel-item active" style="background-image: url('https://www.psp.pt/GaleriaSlider/_DSC6245.jpg')">
+                       <div class="black-overlay"></div>
+        <div class="carousel-caption d-none d-md-block">
+
+          <h2 class="display-4">Policia de Segurança Pública</h2>
+          <p class="lead">Consigo desde 1867, todos os dias!</p>
+          <span class="btn btn-primary" onclick="window.location.href='Sobre.html'" >Mais Informações</span>
+        </div>
+      </div>
+      <!-- Slide Two - Set the background image for this slide in the line below -->
+      <div class="carousel-item" style="background-image: url('https://www.psp.pt/GaleriaSlider/J-ROCHA-19_051_DSC_6925-.jpg')">
+                       <div class="black-overlay"></div>
+       <div class="carousel-caption d-none d-md-block">
+          <h2 class="display-4">Policia de Segurança Pública</h2>
+          <p class="lead">Escola Segura.</p>
+        </div>
+      </div>
+
+      <!-- Slide Three - Set the background image for this slide in the line below -->
+      <div class="carousel-item" style="background-image: url('https://www.psp.pt/GaleriaSlider/UEFA-Nations-League-blindado-res-grande.jpg')">
+                        <div class="black-overlay"></div>
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="display-4">Policia de Segurança Pública</h2>
+          <p class="lead">Unidades Especiais de Polícia</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+  </div>
+
+
+  
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div></div>
+    
+  
+    <section>
+    <div id="newsContainer" class="container" data-aos="fade-left">
+      <h1 class="heading ng-binding">Sabia que...</h1>
+<div class="row  my-row" data-aos="fade-up">
+  <div class="col-md-3 col-lg-3 col-sm-6 psp-card sq">
+    <div class="card card-bg-img card-sq general" style="height: 454px; background-image: url(&quot;https://www.psp.pt/PublishingImages/sq_geral.jpg&quot;);">
+      <div class="overlay bg-official"><a style="color: #fff;">
+        <div class="category type-crime sabia-que">Geral</div><p class="description">A promoção da segurança rodoviária nas regiões autónomas é garantida em exclusividade pela PSP.</p></a></div></div></div>
+        <div class="col-md-3 col-lg-3 col-sm-6 psp-card sq">
+          <div class="card card-bg-img card-sq private-security" style="height: 454px; background-image: url(&quot;https://www.psp.pt/PublishingImages/sq_s_privada.jpg&quot;);">
+            <div class="overlay bg-official"><a style="color: #fff;">
+              <div class="category type-crime sabia-que">Segurança Privada</div>
+              <div class="number-lg countup" style="font-size: 41px;">187</div>
+              <p class="description">Cartões emitidos de Vigilantes de transporte de valores.</p></a></div></div></div>
+              <div class="col-md-3 col-lg-3 col-sm-6 psp-card sq">
+                <div class="card card-bg-img card-sq guns-explosives" style="height: 454px; background-image: url(&quot;https://www.psp.pt/PublishingImages/sq_armas_explosivos.jpg&quot;);">
+                  <div class="overlay bg-official"><a style="color: #fff;">
+                  <div class="category type-crime sabia-que">Armas e Explosivos</div><p class="description">Sistema de Gestão de Transporte de Armas, Munições e Explosivos (SIGESTAME) - A PSP é a entidade competente para assegurar a operacionalidade do SIGESTAME </p></a></div></div></div
+                  ><div class="col-md-3 col-lg-3 col-sm-6 psp-card sq">
+                    <div class="card card-bg-img card-sq transparency" style="height: 454px; background-image: url(&quot;https://www.psp.pt/PublishingImages/sq_transparencia.jpg&quot;);"><div class="overlay bg-official"><a style="color: #fff;">
+                      <div class="category type-crime sabia-que">Transparência</div><p class="description">Encontre aqui alguns dados da atividade da PSP.</p></a></div>
+                      </div></div></div>
+</div>
+</section>
+
+  <!-- Division of page -->
+<div style="height: 40px;width: auto;  background-color: #F7F7F7"></div>
+
+
+
+<!-- Chart --> 
+<section>
+     <h2 class="heading ng-binding" style="margin-bottom: 2%; margin-top: 2%">OS NOSSOS INDICADORES :</h2> 
+  
+  <div class="row" style="margin-right: 0 !important;">
+                <div class="tm-col tm-col-big">
+                    <div class="bg-white tm-block h-100">
+                        <canvas id="pieChart"></canvas>
+                        
+                         <script>
+                              let pieChart = document.getElementById('pieChart').getContext('2d');
+window.addEventListener("load", function() {
+  let medium
+  let serious
+  let veryserious
+  
+  fetchMedium();
+//fetch of data for pie
+
+
+async function fetchMedium() {
+try {
+const result = fetch(`https://54d82a4bef854785886ab91f701b592a.vfs.cloud9.us-east-1.amazonaws.com/OccurrencesActiveModerated/`)
+const response = await result
+const jsonData = await response.json()
+medium = jsonData[0].rows;
+
+fetchSerious();
+
+} catch (e) {
+throw Error(e) } }
+
+async function fetchSerious(){
+  try {
+const result = fetch(`https://54d82a4bef854785886ab91f701b592a.vfs.cloud9.us-east-1.amazonaws.com/OccurrencesActiveHuge/`)
+const response = await result
+const jsonData = await response.json()
+serious = jsonData[0].rows
+
+fetchVerySerious();
+
+} catch (e) {
+throw Error(e) }
+
+}
+
+async function fetchVerySerious(){
+  try {
+const result = fetch(`https://54d82a4bef854785886ab91f701b592a.vfs.cloud9.us-east-1.amazonaws.com/OccurrencesActiveHugePlus/`)
+const response = await result
+const jsonData = await response.json()
+veryserious = jsonData[0].rows
+
+createPieChart();
+
+} catch (e) {
+throw Error(e) }
+
+}
+
+function createPieChart() {
+//Construction
+var ctx = document.getElementById("pieChart");
+var PieChart = new Chart(ctx, {
+  type: 'pie',
+  data: {
+    labels: ['Ocorrências Moderadas', 'Ocorrências Graves', 'Ocorrências Muito Graves'],
+    datasets: [{
+      label: 'Gravidade',
+      data: [medium, serious, veryserious],
+      backgroundColor: ['#6C7F9A', '#2E569E', '#3A4F7B'],
+      hoverBackgroundColor: ['#698ABB', '#1A499E', '#254381'],
+      hoverBorderColor: "rgba(234, 236, 244, 1)",
+      
+    }],
+  },
+  options: {
+    maintainAspectRatio: false,
+    tooltips: {
+      backgroundColor: "rgb(255,255,255)",
+      bodyFontColor: "#858796",
+      borderColor: '#dddfeb',
+      borderWidth: 2,
+      xPadding: 15,
+      yPadding: 10,
+      displayColors: true,
+      caretPadding: 0,
+    },
+    legend: {
+           display: false,
+    },
+    cutoutPercentage: 0,
+  },
+});
+}
+});
+   </script>
+                    </div>
+                </div>
+                
+                                <div class="tm-col tm-col-small" >
+                    <div class="bg-white tm-block h-100">
+                      
+    <!-- Occurences Solved (Monthly) Card Example -->                 
+                         <div id="cardStats1" class="cardStats shadow py-2">
+        <div class="card-body">
+         <div class="row no-gutters align-items-center">
+         <div class="col mr-2" >
+         <div class ="font-weight-bold text-uppercase mb-1" >
+             OCORRÊNCIAS RESOLVIDAS (EM 30 DIAS)
+         </div>
+       <div class="h5 mb-0 font-weight-bold text-gray-800" id="solvedOccurrences"></div>
+       </div>
+        <div class="col-auto">
+      <i class="fas fa-calendar fa-2x text-gray-300 " style="color: #ccc;"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+              <!-- Occurences Fake (Monthly) Card Example -->
+ <div id="cardStats2" class="cardStats shadow py-2">
+        <div class="card-body">
+         <div class="row no-gutters align-items-center">
+         <div class="col mr-2">
+         <div class ="font-weight-bold text-uppercase mb-1">
+             OCORRÊNCIAS ATIVAS
+         </div>
+       <div class="h5 mb-0 font-weight-bold text-gray-800" id="activeOccurrences" style="padding-top: 5%"></div>
+       </div>
+        <div class="col-auto">
+      <i class="fas fa-calendar fa-2x text-gray-300 " style="color: #ccc;"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                          
+                    </div>
+                </div>
+<canvas id="barChart" style="max-width: 35%;"></canvas>
+
+<script>
+
+var ctx = document.getElementById("barChart").getContext('2d');
+window.addEventListener("load", function() {
+  
+  let north
+  let lisbon
+  let alentejo
+  let algarve
+  let center
+  
+  fetchRegions();
+  
+//fetch of data for pie
+  
+  async function fetchRegions() {
+try {
+const result = fetch(`https://54d82a4bef854785886ab91f701b592a.vfs.cloud9.us-east-1.amazonaws.com/OccurrencesReadPerMounthCountProcess/`)
+const response = await result
+const jsonData = await response.json()
+lisbon = jsonData[0].Lisboa;
+north = jsonData[0].Norte;
+alentejo = jsonData[0].Alentejo;
+algarve = jsonData[0].Algarve;
+center = jsonData[0].Centro;
+
+createBarChart();
+
+} catch (e) {
+throw Error(e) } }
+
+//construction bar chart
+
+function createBarChart(){
+var myChart = new Chart(ctx, {
+type: 'bar',
+data: {
+labels: ['Lisboa','Norte', 'Centro',  'Alentejo','Algarve'],
+datasets: [{
+data: [lisbon, north, center, alentejo, algarve],
+backgroundColor: [
+'rgba(58, 79, 123, 0.7)',
+'rgba(58, 79, 123, 0.7)',
+'rgba(58, 79, 123, 0.7)',
+'rgba(58, 79, 123, 0.7)',
+'rgba(58, 79, 123, 0.7)',
+
+],
+borderColor: [
+'rgba(58, 79, 123, 1)',
+'rgba(58, 79, 123, 1)',
+'rgba(58, 79, 123, 1)',
+'rgba(58, 79, 123, 1)',
+'rgba(58, 79, 123, 1)',
+],
+borderWidth: 1
+}]
+},
+options: {
+  
+         title:{
+           display: true,
+           position: 'top',
+           text: 'Número de ocorrências por região do país (último mês)'
+         },
+         legend:{
+           display: false,
+         } ,
+         
+  
+scales: {
+yAxes: [{
+ticks: {
+beginAtZero: true
+}
+}]
+}
+
+}
+});
+}
+}); 
+</script>
+
+<script>
+
+//Number of active Occurrences
+                  fetch('https://54d82a4bef854785886ab91f701b592a.vfs.cloud9.us-east-1.amazonaws.com/OccurrencesActive/')
+            .then(res => res.json())
+            .then((out) => {
+                $.each(out, function(index, value) {
+                    activeOccurrences.innerHTML = value.rows ;
+    
+ });
+            }).catch(err => console.error(err));
+  
+  //Number of solved Occurrences
+                  fetch('https://54d82a4bef854785886ab91f701b592a.vfs.cloud9.us-east-1.amazonaws.com/OccurrencesReadCountProcess')
+            .then(res => res.json())
+            .then((out) => {
+                $.each(out, function(index, value) {
+                   solvedOccurrences.innerHTML = value.solvedOccurrences ;
+    
+ });
+            }).catch(err => console.error(err));
+  
+</script>
+
+</script>
+
+
+
+                        
+      
+      
+  
+  
+  
+</section>
+  
+  <!-- headquarters map -->
+  <div id="findusContainer" class="container" style="background-color: #F7F7F7" >
+         <h3 class="heading ng-binding">ONDE ESTAMOS :</h2> 
+      <iframe id="mapPSP" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3112.4598640200225!2d-9.133515884796118!3d38.73020827959673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd19347ee7face29%3A0x3b975a1ca4a12bc3!2zRGlyZWPDp8OjbyBOYWNpb25hbCBkYSBQb2zDrWNpYSBkZSBTZWd1cmFuw6dhIFDDumJsaWNh!5e0!3m2!1spt-PT!2spt!4v1605483249800!5m2!1spt-PT!2spt" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      <p id= "legendaMaps"> DIREÇÃO NACIONAL DA 
+          POLÍCIA DE SEGURANÇA PÚBLICA</p>
+  </div>
+
+
+<div id="divFooter" class="container">
+		</div>
+
+<!-- Footer -->
+<div id="divFooter" class="container"></div>
+
+<footer class="page-footer font-small stylish-color-dark pt-4">
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-4 mx-auto">
+
+        <!-- Content -->
+        <p><img src="https://www.psp.pt//PublishingImages/logo.svg" style="width: 70%; height:70%"> </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-2" style="font-size: 90%">Links Úteis</h5>
+
+        <ul class="list-unstyled" style="font-size: 90%">
+          <li>
+            <a href="https://www.google.com/search?safe=active&rlz=1C5CHFA_enPT900PT900&tbs=lf:1,lf_ui:2&tbm=lcl&sxsrf=ALeKk03hw6rjk6BCFubQkk3CNz80sEbh2g:1609618795393&q=contactos+psp&rflfq=1&num=10&sa=X&ved=2ahUKEwidqJekif7tAhVGecAKHct1CekQjGp6BAgFED0&biw=1600&bih=912#rlfi=hd:;si:;mv:[[41.6044652,-8.2379569],[41.116633799999995,-8.791645899999999]];tbs:lrf:!1m4!1u2!2m2!2m1!1e1!2m1!1e2!3sIAE,lf:1,lf_ui:2" >Contactos</a>
+          </li>
+          <li>
+            <a href="Politica_Privacidade.html">Política de Privacidade</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+      
+      <div class="col-md-2 mx-auto">
+      <h5 class="font-weight-bold text-uppercase mt-3 mb-2" style="font-size: 90%">Ferramentas</h5> 
+      <ul class="list-unstyled" style="font-size: 90%">
+          <li>
+         <a href="https://portalsocial.psp.pt/" target="_blank">Portal Social</a>
+          </li>
+        <li>
+          <a href="https://webmail.rnsi.mai.gov.pt/owa/auth/logon.aspx?replaceCurrent=1&url=https%3a%2f%2fwebmail.rnsi.mai.gov.pt%2fOWA%2f" target="_blank"> Webemail</a>
+        </li>
+ 
+      </div>
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-2" style="font-size: 90%">Reboques</h5>
+
+        <ul class="list-unstyled" style="font-size: 90%">
+          <li>
+        O seu carro foi rebocado?
+          </li>
+          <li>
+        Envie um SMS para 3838
+          </li>
+          <li>
+        e escreva:
+          </li>
+          <li>
+        REBOQUE (espaço)
+          </li>
+          <li>
+        MATRÍCULA
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 mx-auto">
+      </br>
+
+        <!-- Links -->
+        <div>
+        <img src="https://www.sg.mai.gov.pt/Style%20Library/sgmai/images/logo_sgmai.png" style="width: 70%; height:70%">
+			
+			</div>
+			</br>
+			  <div>
+			 <img src="https://logodownload.org/wp-content/uploads/2018/04/governo-portugal-12.png" style="width: 70%; height:70%">
+			</div>
+ 
+      </div>
+
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  
+  <!-- Social buttons -->
+  <ul class="list-unstyled list-inline text-center">
+    <li class="list-inline-item">
+      <a class="btn-floating btn-fb mx-1" href="https://www.facebook.com/policiasegurancapublica">
+        <i class="fab fa-facebook-f"> </i>
+      </a>
+    </li>
+    <li class="list-inline-item ">
+      <a class="btn-floating btn-tw mx-1" href="https://twitter.com/PSP_Portugal">
+        <i class="fab fa-twitter"> </i>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="btn-floating btn-instagram mx-1" href="https://www.instagram.com/policiasegurancapublica/">
+        <i class="fab fa-instagram"> </i>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="btn-floating btn-yt mx-1" href="https://www.youtube.com/user/DNPSP">
+        <i class="fab fa-youtube"> </i>
+      </a>
+    </li>
+  </ul>
+  <!-- Social buttons -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://psp.pt"> PSP PORTUGAL </a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+
+
+
+
+<!-- Button Register Occurence-->
+<div>
+  <button id="floatOccurenceButton" class="btn" onclick="window.location.href='Formulário.html'" ></a><i class="fas fa-mouse-pointer fa-fw "> </i> Registe aqui a sua Ocorrência</button>
+  <p></p>
+  </div>
+  
+  
+    </body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js" integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw==" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.css" integrity="sha512-/zs32ZEJh+/EO2N1b0PEdoA10JkdC3zJ8L5FTiQu82LR9S/rOQNfQN7U59U9BC12swNeRAz3HSzIL2vpp4fv3w==" crossorigin="anonymous" />
+
+
+
+</html>

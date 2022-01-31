@@ -1,0 +1,252 @@
+/*Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 700px) {
+  
+.tm-block {
+    padding: 0!important;
+    padding-top: 40px!important;
+    margin-left: 40px;
+}
+  
+#barChart {
+  max-width: 95% !important;
+}
+
+
+  
+} 
+
+/* Carousel*/
+
+.carousel-item {
+  position: relative!important;
+  height: 653px;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+.black-overlay{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.4);
+}
+
+background-image.carousel-item{
+    filter: brightness(70%);
+    
+}
+
+
+
+
+btn-primary, .btn-primary:active, .btn-primary:visited {
+    background-color: #18ABD2 !important;
+    border-color: #18ABD2 !important;
+}
+
+.btn-primary:hover { 
+    background-color: #cccccc !important;
+    border-color: #cccccc !important;
+}
+
+.general-image{
+    height: 302px;
+    background-image: url(www.psp.pt/PublishingImages/sq_geral.jpg);
+}
+
+.security-image{
+    
+}
+
+.guns-image{
+    
+}
+
+.tranparecy-image{
+    
+}
+
+
+
+/*Sabia QUE*/
+h1.heading {
+    text-transform: uppercase;
+    margin-bottom: 1.25rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+/* CARDS */
+.card {
+  display: inline-block;
+  position: relative; }
+  @media only screen and (max-width: 767px) {
+    .card {
+      width: 100%; } }
+  .card.card-bg-img {
+    background-size: cover; }
+    .card.card-bg-img.general {
+      background-image: url(https://www.psp.pt/PublishingImages/sq_geral.jpg);
+    }
+    .card.card-bg-img.private-security {
+      background-image: url(https://www.psp.pt/PublishingImages/sq_s_privada.jpg); }
+    .card.card-bg-img.guns-explosives {
+      background-image: url(https://www.psp.pt/PublishingImages/sq_armas_explosivos.jpg); }
+    .card.card-bg-img.transparency {
+      background-image: url(https://www.psp.pt/PublishingImages/sq_transparencia.jpgg); }
+    .card.card-bg-img .overlay {
+      padding: 50px 45px;
+      height: 100%;
+      color: #fff; }
+      .card.card-bg-img .overlay.bg-official {
+        background-color: rgba(58, 79, 123, 0.7); }
+  .card.card-bg {
+    background-color: #f7f7f7; }
+  .card [class^="number"] {
+    text-align: center; }
+    
+.category {
+  font-size: 0.875rem;
+  color: #fff;
+  text-transform: capitalize;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0px 10px;
+  height: 25px;
+  line-height: 25px;
+  z-index: 2;
+  display: inline-block;
+  cursor: default; }
+  .category.news-page {
+    position: relative; }
+  .category.type-crime {
+    background-color: #ffc900;
+    color: #003f90; }
+  .category.type-crime2 {
+    background-color: #ffc900;
+    color: #003f90; }
+    .category.type-crime2.sabia-que {
+      margin-left: 15px; }
+      
+      
+
+.psp-card {
+  border: 5px solid white;
+}
+
+#newsContainer{
+max-width: 80%;
+margin-bottom: 3%;
+overflow: scroll;
+overflow-x: hidden;
+overflow-y: hidden;
+}
+
+/* O NOSSOS INDICADORES */
+#statisticsContainer{
+  max-width: 80%;
+  max-height: 50%!important;
+}
+
+h2.heading {
+    text-transform: uppercase;
+    margin-top: 1.25rem;
+    margin-left: 3rem;
+    margin-bottom: 1.25rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+
+}
+/* CHART */
+#chartsContainer{
+  display: inline-block!important;
+}
+
+
+.tm-block {
+  padding: 40px 35px;
+  margin-left: 40px;
+}
+
+.tm-col {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 40px;
+}
+
+
+
+#cardStats1 {
+  margin-bottom: 4px;
+  max-width: 250px!important;
+  position: relative;
+  display: inline-block;
+  flex-direction: column;
+  min-width: 0;
+  background-color: #fff;
+  background-clip: border-box;
+  color: #3A4F7B;
+  border: 1px solid #e3e6f0;
+  border-radius: 0.35rem;
+  font-size: 80%;
+  border-left: 3px solid #3A4F7B;
+  width: 95% !important;
+  height:50% !important;
+}
+
+#cardStats2{
+  margin-top: 4px;
+  max-width: 250px!important;
+  position: relative;
+  display: inline-block;
+  flex-direction: column;
+  min-width: 0;
+  background-color: #fff;
+  background-clip: border-box;
+  color: #3A4F7B;
+  border: 1px solid #e3e6f0;
+  border-radius: 0.35rem;
+  font-size: 80%;
+  border-left: 3px solid #8CB0DB;
+  width: 95% !important;
+  height:50% !important;
+  
+}
+
+#mapPSP{
+  margin-left: 28%;
+  width: 45%;
+}
+
+h3.heading {
+    text-transform: uppercase;
+    margin-left: 13rem;
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 1.5rem;
+    padding-top: 3%;
+
+}
+
+#findusContainer{
+  max-width: 100%;
+  padding-bottom: 4%;
+}
+
+#legendaMaps {
+  width: 13%;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 80%;
+}
+
+#barChart{
+  margin-top: 3%;
+  margin-left: 5%;
+}

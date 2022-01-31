@@ -1,0 +1,71 @@
+.pagetitle{
+    color: black;
+    font-size: 170%;
+    text-align: center;
+}
+
+.pagesubtitle{
+    color:black;
+    font-size: 135%;
+    text-align: left;
+    margin-left: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: black;
+}
+
+.caption{
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 5px;
+    
+}
+
+
+.bold{
+    font-weight: bold;
+}
+
+.info{
+    right: 5%;
+    font-size: 10px;
+    text-align: right;
+    color: black;
+    
+}
+
+.sidetext{
+    color: rgba(255,255,255,.8);
+    font-size: 13px;
+    text-align: left;
+    margin-left: 7%;
+    margin-right: 5%;
+    margin-bottom: 10px;
+}
+
+.sidetext:hover, .sidetext:focus {
+  color: white;
+  outline: none;
+  border-color: #eaecf4 #eaecf4 #dddfeb;
+  text-decoration: none;
+}
+
+.chartinfo{
+    text-align: center;
+    color: #858796;
+    margin-bottom: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.heading{
+    position: relative;
+}
+
+.infobuttons{
+    height: 2px;
+    background-color: #F7F7F7;
+    margin-bottom: 5%;
+}

@@ -1,0 +1,36 @@
+.pedidos-lb{
+    border-left: .25rem solid #002D73 !important;
+}
+
+.ocorrencias-re-lb{
+    border-left: .25rem solid #36B9CC !important;
+}
+
+.ocorrencias-at-lb{
+    border-left: .25rem solid #4F95A5 !important;
+}
+
+.n-ocorrencias-lb{
+    border-left: .25rem solid #4E73DF !important;
+}
+
+.text1 {
+    color:#4E73DF !important;
+}
+
+.text2 {
+     color:#4F95A5 !important;
+}
+
+.text3 {
+     color:#36B9CC !important;
+}
+
+.text4 {
+     color:#002D73 !important;
+}
+
+
+.white{
+    color: white;
+}

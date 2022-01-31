@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>PSP - Ocorrencias </title>
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet" type="text/css">
+    
+    <!--Main Style-->
+    <link href="css/Ocorrencias.css" rel="stylesheet" type="text/css">
+
+    <!--Clock Style-->
+    <link href="css/clock.css" rel="stylesheet" type="text/css">
+
+    <!--Border Colors-->
+    <link href="css/borders.css" rel="stylesheet" type="text/css">
+
+    <!--Button Table-->
+    <link href="css/table.css" rel="stylesheet" type="text/css">
+
+    <!--Margins Style-->
+    <link href="css/margins.css" rel="stylesheet" type="text/css">
+
+    <!--Text Styles-->
+    <link href="css/text.css" rel="stylesheet" type="text/css">
+
+    <!--Topbar Styles-->
+    <link href="css/topbar.css" rel="stylesheet" type="text/css">
+
+    <!--Sidebar Styles-->
+    <link href="css/sidebar.css" rel="stylesheet" type="text/css">
+
+    <!--Colors-->
+    <link href="css/colors.css" rel="stylesheet" type="text/css">
+    
+    <!--Costumn Button-->
+    <link href="css/buttons.css" rel="stylesheet" type="text/css" />
+    
+    <!--Select List-->
+    <link href="css/selectlist.css" rel="stylesheet" type="text/css">
+    
+                <!-- Populate Table -->
+    <script type="text/javascript" src="tablesPopulate.js"></script>
+    
+    <!-- Sortable -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.10.2/Sortable.min.js" integrity="sha512-ELgdXEUQM5x+vB2mycmnSCsiDZWQYXKwlzh9+p+Hff4f5LA+uf0w2pOp3j7UAuSAajxfEzmYZNOOLQuiotrt9Q==" crossorigin="anonymous"></script>
+    
+
+    <!-- tab icon -->
+    <link rel="icon" href="https://www.psp.pt/PublishingImages/favicon.ico" type="image/icon type">
+            <!-- sweetalert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    
+
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+          <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion sidebar-color" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+ <a class="navbar-brand" href="PaginaInicial.html">
+          <img src="https://svgshare.com/i/RzW.svg" style="padding-top: 10px; padding-bottom: 10px; padding-left: 5px !important;" alt="">
+        </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">
+                   <i class="fas fa-chart-line"></i>
+                    <span>Dashboard</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading" >
+                Operações
+            </div>
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link" href="FormularioEntidade.html" 
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-edit"></i>
+                    <span>Nova Entidade</span>
+                </a>
+            </li>
+
+            <!-- Nav Item - Utilities Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link" href="FormulárioOperacional.html" 
+                    aria-expanded="true" aria-controls="collapseUtilities">
+                    <i class="fas fa-user-edit"></i>
+                    <span>Novo Operacional</span>
+                </a>
+            </li>
+            
+             <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link" href="FormulárioOcorrência.html">
+                    <i class="fas fa-plus"></i>
+                    <span>Novo Pedido de Ocorrencia</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Dados
+            </div>
+
+            <!-- Nav Item - Charts -->
+            <li class="nav-item">
+                <a class="nav-link" href="PedidosOcorrencia.html">
+                    <i class="fas fa-clock"></i>
+                    <span>Pedidos de Ocorrência</span></a>
+            </li>
+
+            <!-- Nav Item - Tables -->
+            <li class="nav-item">
+                <a class="nav-link" href="Ocorrencias.html">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <span>Ocorrências</span></a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" href="Entidades.html">
+                    <i class="fas fa-map-marker-alt fa-fw"></i>
+                    <span> Entidades </span></a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" href="Operacionais.html">  
+                    <i class="fa fa-users" aria-hidden="true"></i>
+                    <span> Operacionais </span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+
+        </ul>
+        <!-- End of Sidebar -->
+
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+        
+            <!-- Main Content -->
+            <div id="content">
+                
+               <!-- Toptopbar -->
+                <section class="navbar navbar-expand navbar-light topbar static-top shadow topbar3"></section>
+
+                <!--Topbar-->
+                <nav style="max-height: 60px !important;" class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow topbar2">
+
+                    <!-- Topbar Search -->
+                      <div style="  white-space: nowrap !important; text-align: center ; padding-left: 40%; margin-top: 0.75%;">
+                        <h2 class="" style="  white-space: nowrap !important; font-size: 150% !important;">
+                            Centro de Operações
+                        </h2>
+                    </div>
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+
+
+                        <!-- Real Time Clock -->
+                        <li class="nav-itme dropdown no-arrow mt-6 mx-1">
+                            <div id="clock">
+                                <br> 0:0:0 xx
+                            </div>
+                        </li>
+
+                         <div class="topbar-divider d-none d-sm-block"></div>
+
+                        <!-- Nav Item - User Information -->
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
+                                <img class="img-profile rounded circle"
+                                    src="img/undraw_profile.svg">
+                            </a>
+                            <!-- Dropdown - User Information -->
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Perfil
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Logout
+                                </a>
+                            </div>
+                        </li>
+ 
+                    </ul>
+
+                </nav>
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+
+                    <!-- Page Heading -->
+                    <div class="heading">
+                    <h1 class="pagesubtitle margin-t">Ocorrências</h1>
+                    <h6 class="info">Número Total de Ocorrência Ativas: <span style="font-weight: bold; margin-bottom: 0px;" id="activeOccurrences">
+                        
+                        
+                    </span></h6>
+                    
+                    </div>
+                    <!-- DataTales Example -->
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                                <div class="input-group cborder3">
+                                    <div class="input-group-append">
+                                        <button class="btn primary-color2" style="border: 3px solid" type="button">
+                                            Filtrar por
+                                            <i class="fas fa-filter"></i>
+                                            <select id="filtrarPor" style="background-color: #f8f9fc; border: transparent;" type="text/css">
+                                                <option></option>
+                                                <option >Data</option>
+                                                <option >Gravidade</option>
+                                                <option >Tipo</option>
+                                                <option >Estado</option>
+                                                <option >Entidade</option>
+                                            </select>
+                                </button>
+                                </div>
+                                    </div>
+                                </form>
+                            <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                                <div class="input-group cborder1">
+                                    <div class="input-group-append">
+                                        <button onclick="filter()" class="btn primary-color"  type="button">
+                                    <i class="fas fa-search fa-sm"></i>
+                                </button>
+                                    </div>
+                                    <input id="filterInput" type="text" class="form-control bg-light border-0 small border-r-10" placeholder="Procurar por..." aria-label="Search" aria-describedby="basic-addon2" autocomplete="on" date-rule="required|name">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered" id="listOccurrences" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th class="bs-checkbox " style="width: 36px; " data-field="state"><div class="th-inner "><input name="checkbox1" type="checkbox" onClick= " toggle(this) " ></div><div class="fht-cell"></div></th>
+                                            <th>Código</th>
+                                            <th>Data do Pedido</th>
+                                            <th>Entidade</th>
+                                            <th>Morada</th>
+                                            <th>Gravidade</th>
+                                            <th>Tipo</th>
+                                            <th>Estado da Ocorrencia</th>
+                                            <th><i class="fas fa-ellipsis-v"></i></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                    <!--end table example-->
+                 </div>
+                </div>
+                <!-- /.container-fluid -->
+
+
+                <!-- End of Main Content -->
+                <!-- checkbox1ter -->
+                <checkbox1ter class="sticky-checkbox1ter bg-white">
+                    <div class="container my-auto">
+                        <div class="copyright text-center my-auto">
+                            <span>Copyright &copy; <a href="https://psp.pt"> PSP PORTUGAL </a></span>
+                        </div>
+                    </div>
+                </checkbox1ter>
+                <!-- End of checkbox1ter -->
+
+            </div>
+            <!-- End of Content Wrapper -->
+
+        </div>
+        <!-- End of Page Wrapper -->
+
+        <!-- Scroll to Top Button-->
+        <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+        </a>
+
+                <!-- Infomation Modal-->
+   
+                
+                <!-- Modal -->
+<div class="modal fade" id="InfoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+  
+               <!--Content -->
+    <div class="modal-content form-elegant">
+                    
+                
+                <!--Header-->
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 dark-grey-text my-3" id="myModalLabel" style= "padding-left:30px !important;">Alteração de Dados</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      
+      <form id= "editForm" name="editionform">
+      <!--Body-->
+      <div class="modal-body mx-4">
+        <!--Body-->
+        <div class="row row-space">
+        <div class="md-form pb-3 col-md-3">
+          <label data-error="wrong" data-success="right" for="date_Request">Data do Pedido</label>
+          <input type="date" id="date_Request" class="form-control validate" readonly>
+        </div>
+                <div class="md-form pb-3 col-md-9">
+          <label data-error="wrong" data-success="right" for="designation_Location">Entidade</label>
+          <input type="text" id="designation_Location" class="form-control validate" readonly>
+
+        </div> 
+        
+        </div>
+        
+
+        <div class="row row-space">   
+            <div class="md-form pb-8 col-md-8">
+              <label data-error="wrong" data-success="right" for="address_Location">Morada</label>
+              <input type="text" id="address_Location" class="form-control validate" readonly>
+            </div>
+                    <div class="md-form pb-3 col-md-4">
+              <label data-error="wrong" data-success="right" for="address_Location">Localidade</label>
+              <input type="text" id="county_Location" class="form-control validate" readonly>
+            </div>
+        </div>
+    
+        <div class="row row-space">
+            <div class="md-form pb-3 col-md-4">
+              <label data-error="wrong" data-success="right" for="type_Request">Tipo de Pedido</label>
+              <input type="text" id="type_Request" class="form-control validate" readonly>
+            </div> 
+        
+           <div class="md-form pb-3 col-md-4">
+              <label class="label" >Gravidade: </label>
+                  <select class="selectbtn custom-select" id="degree_of_emergency_Crime_Nature" readonly="readonly">
+                                        <option value="Muito Grave">Muito Grave</option>
+                                        <option value="Grave">Grave</option>
+                                        <option value="Moderado">Moderado</option>
+                  </select>
+            </div>
+        <div class="md-form pb-3 col-md-4">
+              <label data-error="wrong" data-success="right" for="designation_crime_natureTxt">Designação</label>
+              <input id="designation_crime_natureTxt" class="form-control validate" readonly>
+            </div> 
+        </div>
+    
+    
+        
+        <div class="md-form pb-3">
+             <input type="hidden" id="id_crime_natureTxt">
+        </div>
+
+        <!-- Division of page -->
+                <div style="height: 5px; background-color: #F7F7F7; margin-bottom: 5%;"></div> 
+                                
+        <!-- End of division of page -->  
+                <h4 class="modal-title w-100 dark-grey-text my-3 text-center" id="myModalLabel" style= "padding-left:30px !important;">Materiais</h4>
+                     
+                    <table class="table table-bordered" id="data_table">
+                        <thead>
+                          <th>Categoria</th>
+                          <th>Quantidade</th>
+                        </thead>
+                        <tbody>
+                            
+                        </tbody>
+                    </table>
+                    
+        <!-- Division of page -->
+        <br></br>
+            <div style="height: 5px; background-color: #F7F7F7; margin-bottom: 5%;"></div> 
+                                
+            <!-- End of division of page -->  
+            
+            <div class="row row-space">
+                                <div class="md-form pb-3 col-md-4">
+                  <label class="label"for="occurrence_manager">Gestor da Ocorrência: </label>
+                                        <select class="selectbtn custom-select" id="managers" readonly="readonly" >
+                                            <option value="">Gestor 1</option>
+                                            <option value="">Gestor 2</option> 
+                                            </select>
+                </div>
+                
+                <div class="md-form pb-3 col-md-4">
+                  <label class="label"for="state_Request">Estado da Ocorrência: </label>
+                                        <select class="selectbtn custom-select" id="state_Occurrence" >
+                                             <option value="Pendente">Pendente</option>
+                                            <option value="Arquivado">Arquivado</option>
+                                            <option value="Em Processo">Em Processo</option>
+                                            <option value="Concluído">Concluído</option>
+                                            </select>
+                </div>
+                </div>
+                
+                <div class="text-center mb-5 mt-3">
+                  <button type="submit" class="rounded-b button-color textb1" >Guardar Dados</button>
+                </div>
+            
+              </div>
+            </div>
+            <!--/.Content-->
+          </div>
+        </div>
+
+        <!-- Bootstrap core JavaScript-->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Core plugin JavaScript-->
+        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+        <!-- Custom scripts for all pages-->
+        <script src="js/sb-admin-2.min.js"></script>
+
+        <!-- Page level plugins -->
+        <script src="vendor/chart.js/Chart.min.js"></script>
+
+        <!-- Page level custom scripts -->
+        <script src="js/demo/chart-area-demo.js"></script>
+        <script src="js/demo/chart-pie-demo.js"></script>
+        <script src="js/demo/chart-bar-demo.js"></script>
+
+        <!--Clock Script-->
+        <script src="js/clock.js"></script>
+
+        
+        
+<!-- dropdown more, not close on clicking inside -->
+<script>
+$('ul.dropdown-menu').on('click', function(event){
+    // The event won't be propagated up to the document NODE and 
+    // therefore delegated events won't be fired
+    event.stopPropagation();
+});
+</script>
+
+<script>
+//Filter 
+
+        var select = document.getElementById("filtrarPor");
+document.getElementById('filtrarPor').addEventListener('change', function() {
+     
+        if (select.selectedIndex == 0) {
+            listOccurrences();
+            document.getElementById("filterInput").value = "";
+            
+        }
+});
+function filter() {
+    let e = document.getElementById("filtrarPor");
+    let campo = e.options[e.selectedIndex].text;
+    
+  // Declare variables
+  let input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("filterInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("listOccurrences");
+  tr = table.getElementsByTagName("tr");
+
+  // Loop through all table rows, and hide those who don't match the search query
+  let coluna 
+  
+        if (campo == "Data")  
+      {coluna = 2;}
+      else if (campo == "Gravidade") 
+      {coluna = 5;} 
+      else if (campo == "Tipo") 
+      {coluna= 6;} 
+      else if (campo == "Estado")
+      {coluna= 7;} 
+      else if (campo == "Entidade")
+      {coluna = 3;} 
+  
+  for (i = 0; i < tr.length; i++) {
+      
+td = tr[i].getElementsByTagName("td")[coluna];
+
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+
+//Number of active occurrences
+
+                  fetch('https://54d82a4bef854785886ab91f701b592a.vfs.cloud9.us-east-1.amazonaws.com/OccurrencesCountActive/')
+            .then(res => res.json())
+            .then((out) => {
+                $.each(out, function(index, value) {
+                    activeOccurrences.innerHTML = value.rows ;
+    
+ });
+            }).catch(err => console.error(err));
+
+        
+function listOccurrences() {
+            fetch('https://54d82a4bef854785886ab91f701b592a.vfs.cloud9.us-east-1.amazonaws.com/Occurrences/')
+            .then(res => res.json())
+            .then((out) => {
+                $('#listOccurrences tbody').empty();
+                $.each(out, function(index, value) {
+                    let idOccurrence = value.id_occurrence;
+                    $('#listOccurrences tbody').append('<tr><td>' + '<input name="checkbox1"  type="checkbox" onclick="getRow(this)">' +'</td><td>' +  value.id_occurrence + '</td><td>' + value.date_Request + '</td><td>' + (value.designation_Location == null ? "" : value.designation_Location) + '</td><td>' + value.address_Location + '</td><td>'+ value.degree_of_emergency_Crime_Nature + '</td><td>'+ value.type_Request +  (value.state_Occurrence == "Pendente" ? '</td><td><p class="pendent">Pendente</p>' : (value.state_Occurrence == "Concluído" ? '</td><td><p class="solved">Concluído</p>' : (value.state_Occurrence == "Arquivado" ? '</td><td><p class="unsolved">Arquivado</p>' :(value.state_Occurrence == "Em Processo" ? '</td><td><p class="ongoing">Em Processo</p>' : '</td><td><p class="unknown">Indefinido</p>' )))) + '</td><td>'+ '<div class="dropdown keep-open show-dropdown"> <a href="#" data-toggle="dropdown" aria-expanded="false" > <i class="fas fa-ellipsis-v"> </i></a> <ul class="dropdown-menu "  >                                                <li class="header-title"> <i class="fas fa-cog"></i> Opções</li>     <!-- Division of page -->                                            <div style="height: 2px; background-color: #F7F7F7; margin-bottom: 5%;"></div> <li data-target="#InfoModal" data-toggle="modal"><a id="editar" onclick="editFunction('+idOccurrence+')"> <p  class="dropdownText">                             <i class="far fa-edit" style="padding-right: 4px !important"></i>   Editar</p> </a></li>                                               <li > <a id="apagar" onclick="deleteFunction('+idOccurrence+')"> <p href="#" class="dropdownText">                            <i class="fas fa-trash-alt" style="padding-right: 6px !important"></i>Eliminar</p></a></li> ' + '</td></tr>' )
+                });
+            }).catch(err => console.error(err));
+        }
+
+        $(document).ready(function() {
+            listOccurrences();
+        })
+        
+        
+        
+//Delete Function and update de state of the request
+function deleteFunction(id){
+    
+    let crimeNature, degreeCN, type, idRequest
+    
+    getData();
+    
+    async function getData() {
+        try {
+const result = fetch(`https://54d82a4bef854785886ab91f701b592a.vfs.cloud9.us-east-1.amazonaws.com/Occurrences/` + id)
+const response = await result
+const jsonData = await response.json()
+crimeNature = jsonData[0].id_crime_nature;
+degreeCN = jsonData[0].degree_of_emergency_Crime_Nature;
+type = jsonData[0].type_Request;
+idRequest= jsonData[0].id_request;
+
+deleteOcc();
+
+} catch (e) {
+throw Error(e) } 
+
+        
+    }
+function deleteOcc(){
+            fetch('https://54d82a4bef854785886ab91f701b592a.vfs.cloud9.us-east-1.amazonaws.com/Occurrences/'+ id, {
+                method: 'delete',
+
+            })
+            
+            updateRequest();
+}
+
+
+function updateRequest(){
+         fetch('https://54d82a4bef854785886ab91f701b592a.vfs.cloud9.us-east-1.amazonaws.com/Requests/'+ idRequest, {
+                                headers: {
+                                    "Content-Type": "application/x-www-form-urlencoded"
+                                },
+                                method: 'PUT',
+                                body: `id_crime_nature=${crimeNature}&degree_of_emergency=${degreeCN}&type=${type}&state=Aguardar`
+                
+                
+        }).then(function (response) {
+            Swal.fire(
+  '',
+  'Ocorrência removida com sucesso!',
+  'success'
+).then(  function(){ 
+                    
+    window.location.reload();
+   });
+            
+                    
+                }).catch(function(err) {console.log(err);})
+                
+
+
+   }}
+
+//Edit function to load data and update
+
+function editFunction(id){
+    fetchOccurrenceData()
+    
+    let id_request1
+
+//Fetch the Occurrences info 
+async function fetchOccurrenceData() {
+try {
+const result = fetch(`https://54d82a4bef854785886ab91f701b592a.vfs.cloud9.us-east-1.amazonaws.com/Occurrences/` + id)
+const response = await result
+const jsonData = await response.json()
+
+                        if (jsonData[0].id_request != null) {
+                            id_request1= jsonData[0].id_request;
+                        }
+
+                        if (jsonData[0].id_crime_nature !== null) { 
+                            document.getElementById("id_crime_natureTxt").value = jsonData[0].id_crime_nature;}
+                        if (jsonData[0].designation_Crime_Nature !== null) { 
+                            document.getElementById("designation_crime_natureTxt").value= jsonData[0].designation_Crime_Nature;}
+                        if (jsonData[0].date_Request !== null) { 
+                            document.getElementById("date_Request").value = jsonData[0].date_Request;}
+                        if (jsonData[0].designation_Location !== null) { 
+                            document.getElementById("designation_Location").value = jsonData[0].designation_Location;}
+                        if (jsonData[0].address_Location !== null) {
+                            document.getElementById("address_Location").value = jsonData[0].address_Location;}
+                        if (jsonData[0].type_Request !== null) {
+                            document.getElementById("type_Request").value = jsonData[0].type_Request;}
+                                                if (jsonData[0].county_Location !== null) {
+                            document.getElementById("county_Location").value = jsonData[0].county_Location;}
+                            
+                        if (jsonData[0].degree_of_emergency_Crime_Nature !== null) {
+                        var select = document.getElementById("degree_of_emergency_Crime_Nature");
+                             for(var i = 0;i < select.options.length;i++){
+                                if(select.options[i].value == jsonData[0].degree_of_emergency_Crime_Nature ){
+                                     select.options[i].selected = true;
+                                     
+                            }
+                        }
+                        }
+                        
+                        let select1 = document.getElementById("state_Occurrence");
+                        for(let i = 0;i < select1.options.length;i++){
+                            if(select1.options[i].value == jsonData[0].state_Occurrence){
+                                select1.options[i].selected = true;
+                            }
+                        } 
+                        
+                  
+
+listMaterials()
+
+} catch (e) {
+throw Error(e) } }
+
+
+
+
+        
+
+    //LOAD MATERIAL TABLE       
+    function listMaterials() {
+     var table=document.getElementById("data_table");
+     var table_len=(table.rows.length)-1;
+                fetch('https://54d82a4bef854785886ab91f701b592a.vfs.cloud9.us-east-1.amazonaws.com/OccurrenceMaterials/' + id_request1)
+                .then(res => res.json())
+                .then((out) => {
+                    $('#data_table tbody').empty();
+                    $.each(out, function(index, value) {
+                        $('#data_table tbody').append('<tr><td>' + (value.category != null ? value.category : "") +  (value.quantity != null ? '</td><td>' + value.quantity : '</td><td>') + "</td></tr>"  )
+                    });
+                }).catch(err => console.error(err));
+            }
+
+    
+    
+    //UPDATE INFORMATION    
+            const editForm = document.getElementById('editForm');
+            
+                        editForm.addEventListener('submit', function(e){
+                            e.preventDefault();
+            
+
+            const state_Occurrence = $("#state_Occurrence option:selected").html();
+            
+//Update state
+                            
+                            fetch('https://54d82a4bef854785886ab91f701b592a.vfs.cloud9.us-east-1.amazonaws.com/Occurrences/'+ id, {
+                                headers: {
+                                    "Content-Type": "application/x-www-form-urlencoded"
+                                },
+                                method: 'PUT',
+                                body: `&state=${state_Occurrence}`
+                            }).then(function (response) {Swal.fire(
+              '',
+              'Alteração efetuada com sucesso!',
+              'success'
+            ).then(  function(){ 
+                  window.location.reload();
+               });
+                            }).catch(function(err) {console.log(err);})
+                            
+                        });
+            }
+            
+            
+            
+            // select all rows
+            let main = document.getElementById('checkboxall');
+            let selectall = document.getElementsByName('checkbox1');
+            
+            main.onclick = () => {
+                if (main.checked == true){
+                    for(let i=0; i<selectall.length; i++){
+                        selectall[i].checked = true;
+                    }}else{
+                        for(let i=0; i<selectall.length; i++){
+                        selectall[i].checked = false;
+                    }
+                }
+                
+            
+            }
+                
+                    </script>
+
+</body>
+
+</html>
+

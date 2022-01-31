@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>PSP - Formulário de Ocorrencia </title>
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+    <!--Clock Style-->
+    <link href="css/clock.css" rel="stylesheet" type="text/css">
+    
+    <!--Custom styles from main page -->
+    <link rel="stylesheet" href="css/formOccurence.css" type="text/css">
+    
+    <!--Colors Sheet-->
+    <link href="css/colors.css" rel="stylesheet" type="text/css">
+    
+    <!--Border Colors-->
+    <link href="css/borders.css" rel="stylesheet" type="text/css">
+
+    <!--Button Table-->
+    <link href="css/table.css" rel="stylesheet" type="text/css">
+
+    <!--Margins Style-->
+    <link href="css/margins.css" rel="stylesheet" type="text/css">
+
+    <!--Text Styles-->
+    <link href="css/text.css" rel="stylesheet" type="text/css">
+
+    <!--Topbar Styles-->
+    <link href="css/topbar.css" rel="stylesheet" type="text/css">
+
+    <!--Sidebar Styles-->
+    <link href="css/sidebar.css" rel="stylesheet" type="text/css">
+    
+    <!--Colors-->
+    <link href="css/colors.css" rel="stylesheet" type="text/css">
+    
+    <!-- tab icon -->
+    <link rel="icon" href="https://www.psp.pt/PublishingImages/favicon.ico" type="image/icon type">
+    
+    <!-- sweetalert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+</head>
+
+<body id="page-top">
+    
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+          <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion sidebar-color" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+ <a class="navbar-brand" href="PaginaInicial.html">
+          <img src="https://svgshare.com/i/RzW.svg" style="padding-top: 10px; padding-bottom: 10px; padding-left: 5px !important;" alt="">
+        </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">
+                   <i class="fas fa-chart-line"></i>
+                    <span>Dashboard</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading" >
+                Operações
+            </div>
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link" href="FormularioEntidade.html" 
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-edit"></i>
+                    <span>Nova Entidade</span>
+                </a>
+            </li>
+
+            <!-- Nav Item - Utilities Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link" href="FormulárioOperacional.html" 
+                    aria-expanded="true" aria-controls="collapseUtilities">
+                    <i class="fas fa-user-edit"></i>
+                    <span>Novo Operacional</span>
+                </a>
+            </li>
+            
+             <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link" href="FormulárioOcorrência.html">
+                    <i class="fas fa-plus"></i>
+                    <span>Novo Pedido de Ocorrencia</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Dados
+            </div>
+
+            <!-- Nav Item - Charts -->
+            <li class="nav-item">
+                <a class="nav-link" href="PedidosOcorrencia.html">
+                    <i class="fas fa-clock"></i>
+                    <span>Pedidos de Ocorrência</span></a>
+            </li>
+
+            <!-- Nav Item - Tables -->
+            <li class="nav-item">
+                <a class="nav-link" href="Ocorrencias.html">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <span>Ocorrências</span></a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" href="Entidades.html">
+                    <i class="fas fa-map-marker-alt fa-fw"></i>
+                    <span> Entidades </span></a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" href="Operacionais.html">  
+                    <i class="fa fa-users" aria-hidden="true"></i>
+                    <span> Operacionais </span></a>
+            </li>
+            
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+
+
+
+        </ul>
+        <!-- End of Sidebar -->
+
+
+
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+   <!-- Toptopbar -->
+                <section class="navbar navbar-expand navbar-light topbar static-top shadow topbar3"></section>
+
+                <!--Topbar-->
+                <nav style=" max-height: 60px !important;" class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow topbar2">
+
+                    <!-- Topbar Search -->
+                      <div style="text-align: center ; padding-left:40%; margin-top: 0.75%;">
+                        <h2 class="" style="font-size: 150% !important">
+                        Centro de Operações 
+                        </h2>
+                    </div>
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+
+                        <!-- Real Time Clock -->
+                        <li class="nav-itme dropdown no-arrow mt-6 mx-1">
+                            <div id='clock'>
+                                <br> 0:0:0 xx
+                            </div>
+                        </li>
+
+                        <div class="topbar-divider d-none d-sm-block"></div>
+
+                        <!-- Nav Item - User Information -->
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
+                                <img class="img-profile rounded-circle"
+                                    src="img/undraw_profile.svg">
+                            </a>
+                            <!-- Dropdown - User Information -->
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Perfil
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Logout
+                                </a>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </nav>
+                <!-- End of Topbar -->
+    
+     <div class="container-fluid">
+             <div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
+        <div class="wrapper wrapper--w680">
+            <div class="card card-4">
+                <div class="card-body">
+                    <h2 class="title">Formulário de Ocorrência</h2>
+                    
+                    
+                    <h3 class="subtitle">Dados Ocorrencia</h3>
+                        <form id="Occurrencesform">
+                            <div class= "row row-space">
+                            <div class="col-8">
+                                <label class="label">Natureza: </label>
+                                <div class="input-group">
+                                    <select class="selectbtn custom-select" id="designation_Crime_Nature" name="designation_Crime_Nature">
+                                        <option value="0">Selecione a Natureza:
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+    
+                                <div class="col-3">
+                                <label class="label">Gravidade: </label>
+                                <div class="input-group">
+                                    <select class="selectbtn custom-select" id="degree_of_emergency_Crime_Nature">
+                                        <option value="0">Selecione a Gravidade:</option>
+                                        <option value="Moderado">Moderado</option>
+                                        <option value="Grave">Grave</option>
+                                        <option value="Muito Grave">Muito Grave</option>
+                                        
+                                      </select>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="row row-space">
+                                <div class="col-8">
+                                <label class="label">Descrição: </label>
+                                <div class="col-md-14">
+                                    <textarea rows="5" class="form-control form-control-line" id="descriptionOccurrence"></textarea>
+                                </div>
+                            </div>
+                            </div>
+                            
+                            <br>
+                    
+                    
+                    <!-- Division of page -->
+                    <div style="height: 5px; background-color: #F7F7F7; margin-bottom: 5%;"></div> 
+                        
+                    <!--Personal Data -->
+                    <h3 class="subtitle">Dados Pessoais</h3>
+                   
+                        <div class="row row-space">
+                            <div class="col-6">
+                                <div class="input-group">
+                                    <label class="label">Nome: </label>
+                                    <input class="input--style-4" type="text" name="name_Denouncer" id="name_Denouncer">
+                                </div>
+                            </div>
+                            <div class="col-6" style="padding-left: 2.5rem;">
+                                <div class="input-group">
+                                    <label class="label">Género: </label>
+                                    <div class="p-t-10"> 
+                                        <label class="radio-container m-r-45">Masculino
+                                            <input type="radio" checked="checked" name="gender_Denouncer" value="Masculino">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="radio-container m-r-45">Feminino
+                                            <input type="radio" name="gender_Denouncer" value="Feminino">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="radio-container">Outro
+                                            <input type="radio" name="gender_Denouncer" value= "Outro">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="row row-space">  
+                            
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Nº CC: </label>
+                                    <input class="input--style-4" type="tel" name="cc_Denouncer" id="cc_Denouncer">
+                                </div>
+                            </div>
+                        <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Telefone: </label>
+                                    <input class="input--style-4" type="tel" name="phone_number_Denouncer" id="phone_number_Denouncer">
+                                </div>
+                            </div>
+    
+                            <div class="col-3">
+                                <div class="input-group">
+                                    <label class="label">Data-Nascimento: </label>
+                                    <input class="input--style-4" type="date" name="birthdate_Denouncer" id="birthdate_Denouncer" onblur="minimumAge()">
+                                </div>
+                            </div>
+                            </div>
+                        <div class="row row-space">
+                            <div class="col-6">
+                                <div class="input-group">
+                                    <label class="label">Morada: </label>
+                                    <input class="input--style-4" type="text" name="address_Denouncer" id="address_Denouncer">
+                                </div>
+                            </div>
+                            
+                            
+                             <div class="col-3">
+                                <div class="input-group">
+                                    <label class="label">Localidade: </label>
+                                    <input class="input--style-4" type="text" name="county_Denouncer" id="county_Denouncer">
+                                </div>
+                            </div>
+                                                       <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Distrito: </label>
+                                    <input class="input--style-4" type="text" name="district_Denouncer" id="district_Denouncer">
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class= "row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Código-Postal: </label>
+                                    <input class="input--style-4" type="tel" name="post_code_Denouncer" id="post_code_Denouncer">
+                                </div>
+                            </div>
+                            
+                                <div class="col-6">
+                                <div class="input-group">
+                                    <label class="label">Email: </label>
+                                    <input class="input--style-4" type="email" name="email_Denouncer" id="email_Denouncer">
+                                </div>
+                            </div>
+                        </div>
+
+                        <br>
+                        <br>
+                        
+                        <!-- Division of page -->
+                        <div style="height: 5px; background-color: #F7F7F7; margin-bottom: 5%;"></div> 
+
+
+                       <h4 class="subtitle" style="margin-top: 3%">Dados da Entidade</h3> 
+    
+    
+                        <!-- ENTITY DATA -->
+                            <div class="row row-space">
+                                <div class="col-6">
+                                    <label class="label">Entidades Registadas: </label>
+                                    <div class="input-group">
+                                        <select class="selectbtn custom-select" id="entitieslist" name="entitieslist">
+                                            <option value="0">Selecione a entidade:</option>
+                                          </select>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-2"></div>
+                                    
+                                <div class="col-2">
+                                        <label id="registerLabel"> Registar Entidade</label>
+                                        <input type="checkbox" value="yes" name="checkid" id="registerEntity"></input>
+                                </div>
+                            </div>
+                                
+                          <div class="row row-space"> 
+                             <div class="col-6">
+                                <div class="input-group">
+                                    <label class="label">Designação: </label>
+                                    <input class="input--style-4" type="text" name="designation_Location" id="designation_Location">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">NIF: </label>
+                                    <input class="input--style-4" type="tel" name="nif_Location" id="nif_Location">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row row-space">
+                            <div class="col-6">
+                                <div class="input-group">
+                                    <label class="label">Morada: </label>
+                                    <input class="input--style-4" type="text" name="address_Location" id="address_Location">
+                                </div>
+                            </div>
+                            
+                              <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Localidade: </label>
+                                    <input class="input--style-4" type="text" name="county_Location" id="county_Location">
+                                </div>
+                            </div>
+                           <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Distrito: </label>
+                                    <input class="input--style-4" type="text" name="district_Location" id="district_Location">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Código-Postal: </label>
+                                    <input class="input--style-4" type="tel" name="post_code_Location" id="post_code_Location">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-6">
+                                <div class="input-group">
+                                    <label class="label">Email: </label>
+                                    <input class="input--style-4" type="email" name="email_Location" id="email_Location">
+                                </div>
+                            </div>
+                            
+                            
+                             <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Telefone: </label>
+                                    <input class="input--style-4" type="tel" name="phone_number_Location" id="phone_number_Location">
+                                </div>
+                            </div>
+
+                        </div>
+   
+                        <div class="p-t-15 row justify-content-center">
+                            <button class="btn btn-sm btn--blue" type="submit" onclick="return validation()">Submeter</button>
+                        </div>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+    <!-- Footer -->
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy; <a href="https://psp.pt"> PSP PORTUGAL </a></span>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
+            
+    <!-- Bootstrap core JavaScript-->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Core plugin JavaScript-->
+        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+        <!-- Custom scripts for all pages-->
+        <script src="js/sb-admin-2.min.js"></script>
+
+        <!-- Page level plugins -->
+        <script src="vendor/chart.js/Chart.min.js"></script>
+
+        <!-- Page level custom scripts -->
+        <script src="js/demo/chart-area-demo.js"></script>
+        <script src="js/demo/chart-pie-demo.js"></script>
+        <script src="js/demo/chart-bar-demo.js"></script>
+
+        <!--Clock Script-->
+        <script src="js/clock.js"></script>
+        <script src="js/ValidationRequest.js"></script>
+        
+        
+
+        <!-- dropdown more, not close on clicking inside -->
+        <script>
+        $('ul.dropdown-menu').on('click', function(event){
+            // The event won't be propagated up to the document NODE and 
+            // therefore delegated events won't be fired
+            event.stopPropagation();
+        });
+        </script>
+        
+
+
+        
+        <script>
+                //Populate Select Dropdown with Crime Natures
+            var select = document.getElementById("designation_Crime_Nature");
+            fetch('https://54d82a4bef854785886ab91f701b592a.vfs.cloud9.us-east-1.amazonaws.com/CrimesNature/')
+            .then(res => res.json())
+            .then((out) => {
+                $.each(out, function(index, value) {
+    select.options[select.options.length] = new Option(value.designation, value.id_crime_nature);
+ });
+            }).catch(err => console.error(err));
+            
+                        //Populate Select Dropdown with Entities
+            var select2 = document.getElementById("entitieslist");
+            fetch('https://54d82a4bef854785886ab91f701b592a.vfs.cloud9.us-east-1.amazonaws.com/LocationsRegisted/')
+            .then(res => res.json())
+            .then((out) => {
+                $.each(out, function(index, value) {
+    select2.options[select2.options.length] = new Option(value.designation, value.id_location);
+ });
+            }).catch(err => console.error(err));
+            
+            
+                    //Select List on change fill data
+        document.getElementById('entitieslist').addEventListener('change', function() {
+  var idEntitySelected = select2.options[select2.selectedIndex].value;
+  if (select2.selectedIndex != 0 ){
+            fetch('https://54d82a4bef854785886ab91f701b592a.vfs.cloud9.us-east-1.amazonaws.com/Locations/'+ idEntitySelected)
+            .then(res => res.json())
+            .then((out) => {
+                $.each(out, function(index, value) {
+                    document.getElementById("designation_Location").value = value.designation;
+                    document.getElementById("nif_Location").value = value.nif;
+                    document.getElementById("address_Location").value = value.address;
+                    document.getElementById("phone_number_Location").value = value.phone_number;
+                    document.getElementById("district_Location").value = value.district;
+                    document.getElementById("county_Location").value = value.county;
+                    document.getElementById("post_code_Location").value = value.post_code;
+                    document.getElementById("email_Location").value = value.email;
+                });
+            }).catch(err => console.error(err));
+
+  
+} else {
+                    document.getElementById("designation_Location").value = "";
+                    document.getElementById("nif_Location").value = "";
+                    document.getElementById("address_Location").value = "";
+                    document.getElementById("phone_number_Location").value = "";
+                    document.getElementById("district_Location").value = "";
+                    document.getElementById("county_Location").value = "";
+                    document.getElementById("post_code_Location").value = "";
+                    document.getElementById("email_Location").value = "";
+                    
+    
+}
+            
+        });
+            
+    
+        //Submit form
+        
+        //Create User - NOT ACTIVE, MAYBE USE LATER
+    
+                   const occurrencesform = document.getElementById('Occurrencesform');
+
+            
+            occurrencesform.addEventListener('submit', function(e){
+                e.preventDefault();
+                const email = document.getElementById("email_Denouncer").value;
+                 let id_user;  
+                
+                /*
+                 fetch('https://54d82a4bef854785886ab91f701b592a.vfs.cloud9.us-east-1.amazonaws.com/Users', {
+                    headers: {
+                        "Content-Type": "application/x-www-form-urlencoded"
+                    },
+                    method: 'post',
+                    body: `email=${email}`
+                }) */
+                
+                fetchByBreed(); 
+
+            //Get user_id to Operational
+
+async function fetchByBreed() {
+try {
+const result = fetch(`https://54d82a4bef854785886ab91f701b592a.vfs.cloud9.us-east-1.amazonaws.com/UserUnregisted/`)
+const response = await result
+const jsonData = await response.json()
+id_user = jsonData[0].id;
+fetchDenCreate()
+
+
+} catch (e) {
+throw Error(e) } }
+
+              
+function fetchDenCreate(){  
+    
+//Create Denouncer
+
+                const name_Denouncer = document.getElementById("name_Denouncer").value
+                const gender_Denouncer = $('input[name="gender_Denouncer"]:checked').val();
+                const cc__Denouncer = document.getElementById("cc_Denouncer").value
+                const phone_number_Denouncer = document.getElementById("phone_number_Denouncer").value
+                const birthdate_Denouncer = document.getElementById("birthdate_Denouncer").value
+                const address_Denouncer= document.getElementById("address_Denouncer").value
+                const county_Denouncer = document.getElementById("county_Denouncer").value
+                const district_Denouncer = document.getElementById("district_Denouncer").value
+                const post_code_Denouncer = document.getElementById("post_code_Denouncer").value
+                
+                            
+                fetch('https://54d82a4bef854785886ab91f701b592a.vfs.cloud9.us-east-1.amazonaws.com/Denouncers', {
+                    headers: {
+                        "Content-Type": "application/x-www-form-urlencoded"
+                    },
+                    method: 'post',
+                    body: `id_user=${id_user}&address=${address_Denouncer}&gender=${gender_Denouncer}&cc_number=${cc__Denouncer}&post_code=${post_code_Denouncer}&county=${county_Denouncer}&district=${district_Denouncer}&name=${name_Denouncer}&phone_number=${phone_number_Denouncer}&birth_date=${birthdate_Denouncer}`
+                })
+                
+          fetchGetDenouncer();
+                
+}
+
+// Get the Denouncer created to associate with Request
+
+let id_denouncer;
+
+
+async function fetchGetDenouncer(){
+const cc_Denouncer = document.getElementById("cc_Denouncer").value
+try {
+const result = fetch(`https://54d82a4bef854785886ab91f701b592a.vfs.cloud9.us-east-1.amazonaws.com/readCC/`+ cc_Denouncer)
+const response = await result
+const jsonData = await response.json()
+id_denouncer = jsonData[0].id_denouncer;
+
+fetchRequestCreate();
+
+} catch (e) {
+throw Error(e) } } 
+
+
+//IF THE ENTITY IS GOING TO BE REGISTED OR NOT
+    
+let checkBox = document.querySelector("input[id=registerEntity]")
+
+var e = document.getElementById("entitieslist");
+var valueSelect=e.value;
+
+function fetchRequestCreate(){
+    let id_location
+    const id_Crime_Nature = document.getElementById("designation_Crime_Nature").value
+    const degree_of_emergency = document.getElementById("degree_of_emergency_Crime_Nature").value
+    const descriptionOccurrence= document.getElementById("descriptionOccurrence").value
+let date = new Date();
+let dd = String(date.getDate()).padStart(2, '0');
+let mm = String(date.getMonth() + 1).padStart(2, '0'); //January is 0!
+let yyyy = date.getFullYear();
+
+let today = yyyy + '-' + mm + '-' + dd;
+    let today1 = new Date();
+    let time = today1.getHours() + ":" + today1.getMinutes() + ":" + today1.getSeconds();
+    let state= "Aguardar";
+    let type= "Operador";
+    
+    if ( checkBox.checked == true){
+        
+        const designation_Location = document.getElementById("designation_Location").value;
+        const nif_Location = document.getElementById("nif_Location").value;
+        const address_Location = document.getElementById("address_Location").value;
+        const county_Location = document.getElementById("county_Location").value;
+        const district_Location = document.getElementById("district_Location").value;
+        const post_code_Location= document.getElementById("post_code_Location").value;
+        const email_Location = document.getElementById("email_Location").value;
+        const phone_number_Location = document.getElementById("phone_number_Location").value;
+        
+    fetch('https://54d82a4bef854785886ab91f701b592a.vfs.cloud9.us-east-1.amazonaws.com/Locations', {
+                    headers: {
+                        "Content-Type": "application/x-www-form-urlencoded"
+                    },
+                    method: 'post',
+                    body: `designation=${designation_Location}&nif=${nif_Location}&address=${address_Location}&county=${county_Location}&district=${district_Location}&post_code=${post_code_Location}&phone_number=${phone_number_Location}&email=${email_Location}&type=Registada`
+                })
+                
+                fetchGetIDLocation();
+    
+async function fetchGetIDLocation() {
+try {
+const result = fetch(`https://54d82a4bef854785886ab91f701b592a.vfs.cloud9.us-east-1.amazonaws.com/LocationsNif/` + nif_Location)
+const response = await result
+const jsonData = await response.json()
+id_location = jsonData[0].id_location;
+createRequest();
+
+
+
+
+} catch (e) {
+throw Error(e) } }
+                
+    
+    }else if (checkBox.checked == false && valueSelect == 0){
+
+        const address_Location = document.getElementById("address_Location").value;
+        const county_Location = document.getElementById("county_Location").value;
+        const district_Location = document.getElementById("district_Location").value;
+        const post_code_Location= document.getElementById("post_code_Location").value;
+
+        
+    fetch('https://54d82a4bef854785886ab91f701b592a.vfs.cloud9.us-east-1.amazonaws.com/Locations', {
+                    headers: {
+                        "Content-Type": "application/x-www-form-urlencoded"
+                    },
+                    method: 'post',
+                    body: `address=${address_Location}&county=${county_Location}&district=${district_Location}&post_code=${post_code_Location}`
+                })
+                
+                fetchGetIDLocation2();
+    
+async function fetchGetIDLocation2() {
+try {
+const result = fetch(`https://54d82a4bef854785886ab91f701b592a.vfs.cloud9.us-east-1.amazonaws.com/LocationsAddress/` + address_Location)
+const response = await result
+const jsonData = await response.json()
+id_location = jsonData[0].id_location;
+createRequest();
+
+
+
+
+} catch (e) {
+throw Error(e) } }
+        
+        
+    } else {id_location = document.getElementById("entitieslist").value; createRequest()}
+    
+    
+    function createRequest(){
+                    fetch('https://54d82a4bef854785886ab91f701b592a.vfs.cloud9.us-east-1.amazonaws.com/Requests', {
+                    headers: {
+                        "Content-Type": "application/x-www-form-urlencoded"
+                    },
+                    method: 'post',
+                    body: `id_crime_nature=${id_Crime_Nature}&degree_of_emergency_Request=${degree_of_emergency}&description_Request=${descriptionOccurrence}&id_location=${id_location}&id_denouncer=${id_denouncer}&time_Request=${time}&date_Request=${today}&state_Request=${state}&type_Request=${type}`
+                }).then(function (response) {
+                    if (response.ok){
+      Swal.fire(
+      
+                            '',
+                      'Pedido de Ocorrência criado com sucesso!',
+                      'success'
+                    ).then(  function(){ 
+                          window.location.reload();
+                       });
+  } else {
+      Swal.fire(
+                      '',
+                      'Erro na criação do pedido!',
+                      'error'
+                    )
+  }
+                    
+                     
+                    
+                }).catch(function(error) {
+  console.log('Ocorreu um problema: ' + error.message);
+});
+    }            
+}
+            
+            
+            
+            });
+
+    
+
+
+        </script>
+  
+</body>
+
+
+</html>

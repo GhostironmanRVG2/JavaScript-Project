@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>PSP - Operacionais </title>
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet" type="text/css">
+    
+    <!--Main Style-->
+    <link href="css/Ocorrencias.css" rel="stylesheet" type="text/css">
+
+    <!--Clock Style-->
+    <link href="css/clock.css" rel="stylesheet" type="text/css">
+
+    <!--Border Colors-->
+    <link href="css/borders.css" rel="stylesheet" type="text/css">
+
+    <!--Button Table-->
+    <link href="css/table.css" rel="stylesheet" type="text/css">
+
+    <!--Margins Style-->
+    <link href="css/margins.css" rel="stylesheet" type="text/css">
+
+    <!--Text Styles-->
+    <link href="css/text.css" rel="stylesheet" type="text/css">
+
+    <!--Topbar Styles-->
+    <link href="css/topbar.css" rel="stylesheet" type="text/css">
+
+    <!--Sidebar Styles-->
+    <link href="css/sidebar.css" rel="stylesheet" type="text/css">
+
+    <!--Colors-->
+    <link href="css/colors.css" rel="stylesheet" type="text/css">
+    
+    <!--Costumn Button-->
+    <link href="css/buttons.css" rel="stylesheet" type="text/css" />
+    
+    <!-- Populate Table -->
+    <script type="text/javascript" src="tablesPopulate.js"></script>
+    
+    <!-- sweetalert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    
+    <!-- tab icon -->
+    <link rel="icon" href="https://www.psp.pt/PublishingImages/favicon.ico" type="image/icon type">
+
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+          <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion sidebar-color" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+ <a class="navbar-brand" href="PaginaInicial.html">
+          <img src="https://svgshare.com/i/RzW.svg" style="padding-top: 10px; padding-bottom: 10px; padding-left: 5px !important;" alt="">
+        </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">
+                   <i class="fas fa-chart-line"></i>
+                    <span>Dashboard</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading" >
+                Operações
+            </div>
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link" href="FormularioEntidade.html" 
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-edit"></i>
+                    <span>Nova Entidade</span>
+                </a>
+            </li>
+
+            <!-- Nav Item - Utilities Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link" href="FormulárioOperacional.html" 
+                    aria-expanded="true" aria-controls="collapseUtilities">
+                    <i class="fas fa-user-edit"></i>
+                    <span>Novo Operacional</span>
+                </a>
+            </li>
+            
+             <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link" href="FormulárioOcorrência.html">
+                    <i class="fas fa-plus"></i>
+                    <span>Novo Pedido de Ocorrencia</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Dados
+            </div>
+
+            <!-- Nav Item - Charts -->
+            <li class="nav-item">
+                <a class="nav-link" href="PedidosOcorrencia.html">
+                    <i class="fas fa-clock"></i>
+                    <span>Pedidos de Ocorrência</span></a>
+            </li>
+
+            <!-- Nav Item - Tables -->
+            <li class="nav-item">
+                <a class="nav-link" href="Ocorrencias.html">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <span>Ocorrências</span></a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" href="Entidades.html">
+                    <i class="fas fa-map-marker-alt fa-fw"></i>
+                    <span> Entidades </span></a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" href="Operacionais.html">  
+                    <i class="fa fa-users" aria-hidden="true"></i>
+                    <span> Operacionais </span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+            
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+
+        </ul>
+        <!-- End of Sidebar -->
+
+
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+        
+            <!-- Main Content -->
+            <div id="content">
+                
+               <!-- Toptopbar -->
+                <section class="navbar navbar-expand navbar-light topbar static-top shadow topbar3"></section>
+
+                <!--Topbar-->
+                <nav style="max-height: 60px !important;" class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow topbar2">
+
+                    <!-- Topbar Search -->
+                      <div style="  white-space: nowrap !important; text-align: center ; padding-left: 40%; margin-top: 0.75%;">
+                        <h2 class="" style="  white-space: nowrap !important; font-size: 150% !important;">
+                            Centro de Operações
+                        </h2>
+                    </div>
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+
+
+                        <!-- Real Time Clock -->
+                        <li class="nav-itme dropdown no-arrow mt-6 mx-1">
+                            <div id="clock">
+                                <br> 0:0:0 xx
+                            </div>
+                        </li>
+
+
+   
+
+
+                        <div class="topbar-divider d-none d-sm-block"></div>
+
+                        <!-- Nav Item - User Information -->
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
+                                <img class="img-profile rounded circle"
+                                    src="img/undraw_profile.svg">
+                            </a>
+                            <!-- Dropdown - User Information -->
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Perfil
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Logout
+                                </a>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </nav>
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+
+                    <!-- Page Heading -->
+                    <h1 class="pagesubtitle margin-t">Operacionais</h1>
+                    <h6 class="info">Número Total de Operacionais: <span style="margin-bottom: 0px; font-weight: bold;" id="numberOperationals" ></span></h6>
+                    
+                    
+                    <!-- DataTales Example -->
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                                <div class="input-group cborder3">
+                                    <div class="input-group-append">
+                                        <button class="btn primary-color2" style="border: 3px solid" type="button">
+                                            Filtrar por
+                                            <i class="fas fa-filter"></i>
+                                            <select id="filtrarPor" style="background-color: #f8f9fc; border: transparent;" type="text/css">
+                                                <option></option>
+                                                <option >ID</option>
+                                                <option >Nome</option>
+                                                <option >Tipo</option>
+                                                <option >Qualificação</option>
+                                                <option >Patente</option>
+                                                <option >Telefone</option>
+                                                <option >Estado</option>
+                                            </select>
+                                </button>
+                                </div>
+                                    </div>
+                                </form>
+                            <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                                <div class="input-group cborder1">
+                                    <div class="input-group-append">
+                                        <button onClick="filter();" class="btn primary-color"  type="button">
+                                    <i class="fas fa-search fa-sm"></i>
+                                </button>
+                                    </div>
+                                    <input  id="filterInput" type="text" class="form-control bg-light border-0 small border-r-10" placeholder="Procurar por..." aria-label="Search" aria-describedby="basic-addon2" autocomplete="on" date-rule="required|name">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered" id="listOperationals" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th class="bs-checkbox " style="width: 36px; " data-field="state"><div class="th-inner "><input name="checkboxall" type="checkbox" onClick= " toggle(this) " id="checkboxall" ></div><div class="fht-cell"></div></th>
+                                            <th>ID</th>
+                                            <th>Nome</th>
+                                            <th>Tipo</th>
+                                            <th>Qualificação</th>
+                                            <th>Patente</th>
+                                            <th>Telefone</th>
+                                            <th>Estado</th>
+                                            <th><i class="fas fa-ellipsis-v"></i></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end table example-->
+                 </div>
+                </div>
+                <!-- /.container-fluid -->
+
+
+                <!-- End of Main Content -->
+                <!-- checkbox1ter -->
+                <checkbox1ter class="sticky-checkbox1ter bg-white">
+                    <div class="container my-auto">
+                        <div class="copyright text-center my-auto">
+                            <span>Copyright &copy; <a href="https://psp.pt"> PSP PORTUGAL </a></span>
+                        </div>
+                    </div>
+                </checkbox1ter>
+                <!-- End of checkbox1ter -->
+
+            </div>
+            <!-- End of Content Wrapper -->
+
+        </div>
+        <!-- End of Page Wrapper -->
+
+        <!-- Scroll to Top Button-->
+        <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+
+        
+                <!-- Infomation Modal-->
+   
+                
+                <!-- Modal -->
+<div class="modal fade" id="InfoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+  
+               <!--Content -->
+    <div class="modal-content form-elegant">
+                    
+                
+       <!--Header-->
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 dark-grey-text my-3" id="myModalLabel" style= "padding-left:30px !important;">Alteração de Dados</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      
+      <form id= "editForm" name="editionform">
+      <!--Body-->
+      <div class="modal-body mx-4">
+        <!--Body-->
+        <div class="md-form pb-3">
+          <label data-error="wrong" data-success="right" for="name_Candidate">Nome</label>
+          <input type="text" id="name_Candidate" class="form-control validate">
+        </div>
+        
+        <div class="md-form pb-3">
+          <label data-error="wrong" data-success="right" for="candidate_type_Candidate">Tipo</label>
+          <input type="text" id="candidate_type_Candidate" class="form-control validate">
+        </div>
+        
+        <div class="md-form pb-3">
+          <label data-error="wrong" data-success="right" for="qualifications_Candidate">Qualificação</label>
+          <input type="text" id="qualifications_Candidate" class="form-control validate">
+        </div>
+        
+        <div class="md-form pb-3">
+          <label data-error="wrong" data-success="right" for="patent_Operational">Patente</label>
+          <input type="text" id="patent_Operational" class="form-control validate">
+        </div>
+        
+        <div class="md-form pb-3">
+          <label data-error="wrong" data-success="right" for="phone_number_Candidate">Tefefone</label>
+          <input type="text" id="phone_number_Candidate" class="form-control validate">
+        </div>
+
+        
+        <div class="text-center mb-5 mt-3">
+          <button type="submit" class="rounded-b button-color textb1" >Guardar Dados</button>
+        </div>
+        </form>
+      </div>
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
+
+<script>    
+
+            
+ </script>
+ 
+        <!--End Information Modal-->
+        
+        
+        <!-- Bootstrap core JavaScript-->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Core plugin JavaScript-->
+        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+        <!-- Custom scripts for all pages-->
+        <script src="js/sb-admin-2.min.js"></script>
+
+        <!-- Page level plugins -->
+        <script src="vendor/chart.js/Chart.min.js"></script>
+
+        <!-- Page level custom scripts -->
+        <script src="js/demo/chart-area-demo.js"></script>
+        <script src="js/demo/chart-pie-demo.js"></script>
+        <script src="js/demo/chart-bar-demo.js"></script>
+
+        <!--Clock Script-->
+        <script src="js/clock.js"></script>
+        
+        <script>
+        //Filter
+                var select = document.getElementById("filtrarPor");
+        document.getElementById('filtrarPor').addEventListener('change', function() {
+             
+                if (select.selectedIndex == 0) {
+                    listOperationals();
+                    document.getElementById("filterInput").value = "";
+                    
+                }
+        });
+        
+        function filter() {
+            let e = document.getElementById("filtrarPor");
+            let campo = e.options[e.selectedIndex].text;
+            
+          // Declare variables
+          let input, filter, table, tr, td, i, txtValue;
+          input = document.getElementById("filterInput");
+          filter = input.value.toUpperCase();
+          table = document.getElementById("listOperationals");
+          tr = table.getElementsByTagName("tr");
+        
+          // Loop through all table rows, and hide those who don't match the search query
+          let coluna 
+          
+                if (campo == "ID")  
+              {coluna = 1;}
+              else if (campo == "Nome") 
+              {coluna = 2;} 
+              else if (campo == "Tipo") 
+              {coluna= 3;} 
+              else if (campo == "Qualificação")
+              {coluna= 4;} 
+              else if (campo == "Patente")
+              {coluna = 5;} 
+              else if (campo == "Telefone")
+              {coluna = 6;} 
+              else if (campo == "Estado")
+              {coluna = 7;}
+          
+          for (i = 0; i < tr.length; i++) {
+              
+        td = tr[i].getElementsByTagName("td")[coluna];
+        
+            if (td) {
+              txtValue = td.textContent || td.innerText;
+              if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                tr[i].style.display = "";
+              } else {
+                tr[i].style.display = "none";
+              }
+            }
+          }
+        }
+        
+        //Number of active requests
+                          fetch('https://54d82a4bef854785886ab91f701b592a.vfs.cloud9.us-east-1.amazonaws.com/OperationalsCount/')
+                    .then(res => res.json())
+                    .then((out) => {
+                        $.each(out, function(index, value) {
+                            numberOperationals.innerHTML = value.rows ;
+            
+         });
+                    }).catch(err => console.error(err));
+        
+function listOperationals() {
+            fetch('https://54d82a4bef854785886ab91f701b592a.vfs.cloud9.us-east-1.amazonaws.com/Operationals')
+            .then(res => res.json())
+            .then((out) => {
+                $('#listOperationals tbody').empty();
+                $.each(out, function(index, value) {
+                let idOperational = value.id_operational;
+                    $('#listOperationals tbody').append('<tr><td>' + '<input name="checkbox1"  type="checkbox" onclick="getRow(this)">' +'</td><td>' +  idOperational +'</td><td>' + value.name_Candidate + '</td><td>' + value.candidate_type_Candidate+ '</td><td>' + value.qualifications_Candidate + '</td><td>' + value.patent_Operational + '</td><td>' + value.phone_number_Candidate + '</td><td>'+ value.state_Operational + '</td><td>' +'<div class="dropdown keep-open show-dropdown"> <a href="#" data-toggle="dropdown" aria-expanded="false" > <i class="fas fa-ellipsis-v"> </i></a> <ul class="dropdown-menu "  >                                                <li class="header-title"> <i class="fas fa-cog"></i> Opções</li>     <!-- Division of page -->                                            <div style="height: 2px; background-color: #F7F7F7; margin-bottom: 5%;"></div> <li data-target="#InfoModal" data-toggle="modal"> <a id="editar" onclick="editFunction('+idOperational+')"> <p  class="dropdownText">                             <i class="far fa-edit" style="padding-right: 4px !important"></i>   Editar</p></a></li> <li >                                                <p href="#"  class="dropdownText">                                         <i class="fas fa-archive" style="padding-right: 5px !important"></i>Arquivar</p></li>                                                <li > <a id="apagar" onclick="deleteFunction('+idOperational+')"> <p href="#" class="dropdownText">                            <i class="fas fa-trash-alt" style="padding-right: 6px !important"></i>Eliminar</p></a></li> ' + '</td></tr>' )
+                });
+            }).catch(err => console.error(err));
+        }
+
+        $(document).ready(function() {
+            listOperationals();
+        })
+        
+        function deleteFunction(id){
+            fetchGetUser();
+            let id_user;
+            
+//fetch of data for pie
+  async function fetchGetUser() {
+try {
+const result = fetch(`https://54d82a4bef854785886ab91f701b592a.vfs.cloud9.us-east-1.amazonaws.com/Operationals/` + id)
+const response = await result
+const jsonData = await response.json()
+id_user = jsonData[0].id_user;
+
+
+updateState();
+} catch (e) {
+throw Error(e) } }
+
+let inactive= "inactive"
+function updateState(){
+    
+     fetch('https://54d82a4bef854785886ab91f701b592a.vfs.cloud9.us-east-1.amazonaws.com/UsersStatus/'+ id_user, {
+                                headers: {
+                                    "Content-Type": "application/x-www-form-urlencoded"
+                                },
+                                method: 'PUT',
+                                body: `status_Users=${inactive}`
+                            })
+  updateStateOperational();
+}
+
+function updateStateOperational(){
+     fetch('https://54d82a4bef854785886ab91f701b592a.vfs.cloud9.us-east-1.amazonaws.com/OperationalsState/'+ id, {
+                                headers: {
+                                    "Content-Type": "application/x-www-form-urlencoded"
+                                },
+                                method: 'PUT',
+                                body: `state_Operational=${inactive}`
+                            }).then(function (response) {Swal.fire(
+  '',
+  'Operacional removido com sucesso!',
+  'success'
+).then(  function(){ 
+                    
+      window.location.reload();
+   });
+            
+                    
+                }).catch(function(err) {console.log(err);})
+                
+}
+
+   }
+
+function editFunction(id){
+            fetch('https://54d82a4bef854785886ab91f701b592a.vfs.cloud9.us-east-1.amazonaws.com/Operationals/'+ id)
+            .then(res => res.json())
+            .then((out) => {
+                $.each(out, function(index, value) {
+                    if (value.name_Candidate !== null) { 
+                        document.getElementById("name_Candidate").value = value.name_Candidate;}
+                    if (value.candidate_type_Candidate !== null) { 
+                        document.getElementById("candidate_type_Candidate").value = value.candidate_type_Candidate; }
+                    if (value.qualifications_Candidate !== null) { 
+                        document.getElementById("qualifications_Candidate").value = value.qualifications_Candidate; }    
+                    if (value.patent_Operational !== null) { 
+                        document.getElementById("patent_Operational").value = value.patent_Operational;}
+                    if (value.phone_number_Candidate !== null) { 
+                        document.getElementById("phone_number_Candidate").value = value.phone_number_Candidate;
+                    }
+                });
+            }).catch(err => console.error(err));
+
+            const editForm = document.getElementById('editForm');
+            
+                        editForm.addEventListener('submit', function(e){
+                            e.preventDefault();
+
+            const name_Candidate = document.getElementById("name_Candidate").value
+            const candidate_type_Candidate = document.getElementById("candidate_type_Candidate").value
+            const qualifications_Candidate = document.getElementById("qualifications_Candidate").value
+            const patent_Operational = document.getElementById("patent_Operational").value
+            const phone_number_Candidate  = document.getElementById("phone_number_Candidate").value
+                            
+                            fetch('https://54d82a4bef854785886ab91f701b592a.vfs.cloud9.us-east-1.amazonaws.com/Operationals/'+ id, {
+                                headers: {
+                                    "Content-Type": "application/x-www-form-urlencoded"
+                                },
+                                method: 'PUT',
+                                body: `name_Candidate=${name_Candidate}&candidate_type_Candidate=${candidate_type_Candidate}&qualifications_Candidate=${qualifications_Candidate}&patent_Operational=${patent_Operational}&phone_number_Candidate=${phone_number_Candidate}`
+                            }).then(function (response) {Swal.fire(
+              '',
+              'Alteração efetuada com sucesso!',
+              'success'
+            ).then(  function(){ 
+                 window.location.reload();
+               });
+                            }).catch(function(err) {console.log(err);})
+                        });
+            }
+
+            
+            
+            // select all rows
+            let main = document.getElementById('checkboxall');
+            let selectall = document.getElementsByName('checkbox1');
+            
+            main.onclick = () => {
+                if (main.checked == true){
+                    for(let i=0; i<selectall.length; i++){
+                        selectall[i].checked = true;
+                    }}else{
+                        for(let i=0; i<selectall.length; i++){
+                        selectall[i].checked = false;
+                    }
+                }
+                
+            
+            }
+                    </script>
+        
+        
+
+</body>
+
+</html>
+

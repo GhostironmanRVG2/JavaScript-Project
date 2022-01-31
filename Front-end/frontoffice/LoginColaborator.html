@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1,0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <title> PSP - Login</title>
+        <link rel="stylesheet" href="LoginColaborator.css" type="text/css">
+        
+        <link rel="stylesheet" href="headerfooter.css" type="text/css">
+        
+<!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+<!-- Add icon library -->
+<script src="https://kit.fontawesome.com/2545434131.js" crossorigin="anonymous"></script>
+<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+
+    <!-- tab icon -->
+    <link rel="icon" href="https://www.psp.pt/PublishingImages/favicon.ico" type="image/icon type">
+    
+    </head>
+
+    
+    <body>
+
+<!-- HEADER -->
+
+                  <!-- ======= Top Bar ======= -->
+        
+  <section id="topbar" class="d-none d-lg-block">
+       <div>
+        <p id="nrEmerg2"> 112</p>
+    <p id="nrEmerg1"><i class="fas fa-phone-alt" style="padding-right: 10px"></i>Número de Emergência: </p>
+    </div>
+  </section>
+
+ <header>  
+ <header id="header">
+   
+    <div id="menu" class="container">
+
+<nav id="nav1" class="navbar navbar-expand-lg navbar-light bg-light">
+    <div id="nav-content" class="container">
+    <a class="navbar-brand" href="PaginaInicial.html">
+          <img src="https://www.psp.pt//PublishingImages/logo.svg" alt="">
+        </a>
+  <button class="navbar-toggler pull-xs-right hidden-md-up" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="Sobre.html">Sobre </a>
+      </li>
+      <li class="nav-item dropdown active" >
+        <a href="#" class="nav-link dropdown-toggle"  data-toggle="dropdown">Atividades</a>
+        <div class="dropdown-menu">
+            <a href="Ambiente.html" class="dropdown-item">Ambiente</a>
+            <a href="CãesPerigosos.html" class="dropdown-item">Cães Perigosos e Potencialmente Perigosos</a>
+            <a href="GestãoSegurança.html" class="dropdown-item">Gestão de Segurança em Grandes Eventos</a>
+            <a href="InvestigaçãoCriminal.html"class="dropdown-item">Investigação Criminal</a>
+            <a href="DefesaAnimal.html"class="dropdown-item">Programa de Defesa Animal</a>
+        </div>
+    </li>
+      <li class="nav-item dropdown active" >
+        <a href="#" class="nav-link dropdown-toggle"  data-toggle="dropdown">Serviços Online</a>
+        <div class="dropdown-menu">
+            <a href="https://seronline.psp.pt/" target="_blank" class="dropdown-item">Armas e Explosivos - SEROnline</a>
+            <a href="https://estouaqui.mai.gov.pt/Pages/index.htm" target="_blank"  class="dropdown-item">Estou Aqui</a>
+            <a href="https://sigesponline.psp.pt/" target="_blank"  class="dropdown-item">Segurança Privada - SIGESP</a>
+
+        </div>
+    </li>
+
+    </ul>
+      </div>
+      
+  </div>
+    <button id="loginCitizen" type="button" class="btn btn-primary" onclick="window.location.href='LoginCitizen.html'"><i class="fas fa-user fa-fw "></i> Área do Cidadão</button>   
+    <button id="loginColaborator" type="button" class="btn btn-primary" onclick="window.location.href='LoginColaborator.html'"><i class="fas fa-user-tie"></i> Login Colaboradores</button>
+
+</nav>
+</div>
+</header> 
+
+
+<!-- LOGIN -->
+	<div class="limiter">
+		<div id="body1" class="container-login100">
+			<div class="wrap-login100">
+				<form class="login100-form validate-form" id="loginForm">
+					<span class="login100-form-title p-b-48">
+						<img src="https://www.psp.pt//PublishingImages/logo.svg" width="270" height="100">
+					</span>
+          <hr id="separateLine" style="height:3px; width:100%; border-width:0; color:#052F83; background-color:#052F83">
+					<p id="titleColaborator"> Colaboradores</p>
+
+					<div class="wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">
+					  <br>
+						<input class="input100" type="text" name="email" id="email">
+						<span class="focus-input100" data-placeholder="Email"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate="Enter password">
+						<span class="btn-show-pass" onclick="showPassword()">
+							<i class="fas fa-eye"></i>
+						</span>
+						<br>
+						<input class="input100" type="password" name="pass" id="password">
+						<span class="focus-input100" data-placeholder="Password"></span>
+					</div>
+
+					<div class="container-loginButton">
+							<input id="loginBtn" type="submit" name="submit" class="btn btn-primary btn-md" value="Iniciar Sessão" >
+							</button>
+						</div>
+					</div>
+
+
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	<script>
+	const loginForm = document.getElementById("loginForm")
+	
+		   loginForm.addEventListener('submit', function(e){
+	     e.preventDefault();
+	          const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+
+	     
+	                      fetch('https://54d82a4bef854785886ab91f701b592a.vfs.cloud9.us-east-1.amazonaws.com/signin/Operacionais', {
+                    headers: {
+                        "Content-Type": "application/x-www-form-urlencoded"
+                    },
+                    method: 'post',
+                    body: `email=${email}&password=${password}`
+                }).then(res => res.json())
+            .then((out) => {
+         console.log(out)
+            if (out.status == 200) {
+              localStorage.setItem('id_operational', out.MSG.id_operational); 
+              localStorage.setItem('patent', out.MSG.patent); 
+              localStorage.setItem('address', out.MSG.operational_type); 
+              localStorage.setItem('name', out.MSG.name); 
+              
+             window.location.replace(out.url2)
+
+            }else {
+              if (out.status == 400){
+                                    Swal.fire(
+                      '',
+                      'O email ou password não são válidos.',
+                      'error'
+                    )
+                    .then(function(){window.location.replace(out.url2)});
+                
+              }else {
+                    Swal.fire(
+      
+                      'Erro no Login',
+                      'Não foi possível efetuar Login. Tente novamente.',
+                      'error'
+                    )
+              }
+            }
+          })
+          .catch(error => {
+            ({
+  icon: 'error',
+  title: 'Erro',
+  text: `Pedido falhado: ${error}`
+})
+  
+          });
+	   });
+	   
+	   
+	
+	  //Show password when clicking eye  icon
+function showPassword() {
+  var x = document.getElementById("password");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+	</script>
+</body>
+
+</html>

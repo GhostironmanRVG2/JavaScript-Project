@@ -1,0 +1,25 @@
+@import url("fontawesome-free/css/fontawesome-all.min.css");
+@import url("framework.css");
+
+
+#headerimg{
+    max-width: 150%;
+    height: 400px;  
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center 70%;
+}
+
+#headercaption{
+    background-color:rgba(2, 20, 56,0.6);
+    color: white;
+    font-weight: 500 !important;
+    text-transform: uppercase;
+    padding: 2% 4% 2% 4%;
+    margin-top: 270px;
+    text-align: center;
+    float: left;
+    font-size: 150%;
+    position: absolute;
+}
+

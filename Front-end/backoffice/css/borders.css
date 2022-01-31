@@ -1,0 +1,53 @@
+.cborder1 {
+    border: 2px solid #012B77;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius:10px;
+    border-bottom-left-radius:10px;
+    border-top-left-radius:10px;
+}
+
+.cborder2 {
+    border: 2px solid #012B77;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius:10px;
+}
+
+
+.border-r-10{
+    border-radius: 10px;
+}
+
+.border-r-11{
+    border-radius: 11px;
+}
+
+.border-r-12{
+    border-radius: 12px;
+}
+
+.border-r-13{
+    border-radius: 13px;
+}
+
+.border-r-14{
+    border-radius: 14px;
+}
+
+.border-r-15{
+    border-radius: 15px;
+}
+
+
+/*search icon*/
+.primary-color{
+    color: white;
+    background-color: #012B77;
+    background-border: #012B77;
+}
+
+.primary-color2{
+    color: #012B77;
+    backgrounf-color: white;
+    background-border: #012B77;
+    
+}

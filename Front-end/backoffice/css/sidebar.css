@@ -1,0 +1,26 @@
+/*Sidebar*/
+.sidebar-color {
+    background-color: #012B77;
+    background-image: linear-gradient(180deg,#012B77 100%,#4194D4 100%);
+    background-size: cover;
+}
+
+.sidebar-size {
+    width: 17.18% !important;
+    padding-right: 10px;
+    padding-left: 5px;
+    
+}
+
+.profilei {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  margin-bottom: 30%;
+  margin-top: 10%;
+}
+
+.sidebar-size-dash {
+    width: 17.18% !important;    
+}

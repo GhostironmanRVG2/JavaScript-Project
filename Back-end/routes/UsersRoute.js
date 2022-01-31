@@ -1,0 +1,12 @@
+const app = require('../server');
+const controllerUser = require('../controllers/UsersController');
+app.get('/Users/', controllerUser.read);
+app.get('/Users/:id_user', controllerUser.readID);
+app.post('/Users/', controllerUser.save);
+app.put('/Users/:id_user', controllerUser.update);
+app.delete('/Users/:id_user', controllerUser.deleteID);
+app.get('/UsersEmail/:email', controllerUser.readEmail);
+app.get('/UserUnregisted/', controllerUser.readUnregisted);
+app.get('/UserAnonymous/', controllerUser.readAnonymous);
+app.put('/UsersStatus/:id_user', controllerUser.updateStatus);
+app.put('/UsersPassword/:email', controllerUser.updatePassword);

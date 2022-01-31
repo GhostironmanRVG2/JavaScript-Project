@@ -1,0 +1,60 @@
+.bu-table{
+    background-color: white;
+    color: black;
+    border-color: white;
+    padding: 0%;
+}
+
+.solved{
+    background-color: #CDFFCD;
+    border-radius: 5px;
+    margin-right: 25%;
+    color: #007F00;
+    text-align: center;
+}
+
+.ongoing{
+    background-color: #FFE0E0;
+    border-radius: 5px;
+    margin-right: 25%;
+    color: #D30000;
+    text-align: center;
+}
+
+.unsolved{
+    background-color: #DADBDE;
+    border-radius: 5px;
+    margin-right: 25%;
+    color: #494949;
+    text-align: center;
+}
+
+.pendent{
+    background-color: #FFECCC;
+    border-radius: 5px;
+    margin-right: 25%;
+    color: #965E00;
+    text-align: center;
+}
+
+.approving{
+    background-color: #ffd48f;
+    border-radius: 5px;
+    margin-right: 25%;
+    color: #965E00;
+    text-align: center;
+}
+
+
+.unknown{
+    background-color: #f5f0f0;
+        border-radius: 5px;
+    margin-right: 25%;
+    color: #000000;
+    text-align: center;
+    white-space: nowrap;
+}
+.container-fluid{
+    padding-left: 25px!important;
+    padding-right: 25px!important;
+}

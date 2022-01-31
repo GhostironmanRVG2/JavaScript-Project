@@ -1,0 +1,19 @@
+/*Topbar*/
+.topbar1{
+    height: 4%;
+    background: linear-gradient(90deg, #052F83 30.21%, #4194D5 100%);
+    background-size: cover;
+    
+}
+
+.topbar2{
+    height: 6%;
+    background-image: linear-gradient(90deg,white 100%,#4194D4 100%);
+    background-size: cover;
+    
+}
+
+.topbar3{
+    height: 2px;
+    background: linear-gradient(90deg, #012B77 30.21%, #4194D5 100%);
+}

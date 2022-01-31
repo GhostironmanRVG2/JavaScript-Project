@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1,0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <title> PSP - Formulário</title>
+        <link rel="stylesheet" href="Formulário.css" type="text/css">
+        <link rel="stylesheet" href="headerfooter.css" type="text/css">
+
+<!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    
+    <!-- Add icon library -->
+<script src="https://kit.fontawesome.com/2545434131.js" crossorigin="anonymous"></script>
+
+    <!-- tab icon -->
+    <link rel="icon" href="https://www.psp.pt/PublishingImages/favicon.ico" type="image/icon type">
+    
+        <!-- sweetalert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    
+    </head>
+
+
+    <body>
+    
+    <!-- ======= Top Bar ======= -->
+        
+  <section id="topbar" class="d-none d-lg-block">
+       <div>
+        <p id="nrEmerg2"> 112</p>
+    <p id="nrEmerg1"><i class="fas fa-phone-alt" style="padding-right: 10px"></i>Número de Emergência: </p>
+    </div>
+  </section>
+
+ <header>  
+ <header id="header">
+   
+    <div id="menu" class="container">
+
+<nav id="nav1" class="navbar navbar-expand-lg navbar-light bg-light">
+    <div id="nav-content" class="container">
+    <a class="navbar-brand" href="PaginaInicial.html">
+          <img src="https://www.psp.pt//PublishingImages/logo.svg" alt="">
+        </a>
+  <button class="navbar-toggler pull-xs-right hidden-md-up" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="Sobre.html">Sobre </a>
+      </li>
+      <li class="nav-item dropdown active" >
+        <a href="#" class="nav-link dropdown-toggle"  data-toggle="dropdown">Atividades</a>
+        <div class="dropdown-menu">
+            <a href="Ambiente.html" class="dropdown-item">Ambiente</a>
+            <a href="CãesPerigosos.html" class="dropdown-item">Cães Perigosos e Potencialmente Perigosos</a>
+            <a href="GestãoSegurança.html" class="dropdown-item">Gestão de Segurança em Grandes Eventos</a>
+            <a href="InvestigaçãoCriminal.html"class="dropdown-item">Investigação Criminal</a>
+            <a href="DefesaAnimal.html"class="dropdown-item">Programa de Defesa Animal</a>
+        </div>
+    </li>
+      <li class="nav-item dropdown active" >
+        <a href="#" class="nav-link dropdown-toggle"  data-toggle="dropdown">Serviços Online</a>
+        <div class="dropdown-menu">
+            <a href="https://seronline.psp.pt/" target="_blank" class="dropdown-item">Armas e Explosivos - SEROnline</a>
+            <a href="https://estouaqui.mai.gov.pt/Pages/index.htm" target="_blank"  class="dropdown-item">Estou Aqui</a>
+            <a href="https://sigesponline.psp.pt/" target="_blank"  class="dropdown-item">Segurança Privada - SIGESP</a>
+
+        </div>
+    </li>
+
+    </ul>
+      </div>
+      
+  </div>
+    <button id="loginCitizen" type="button" class="btn btn-primary" onclick="window.location.href='LoginCitizen.html'"><i class="fas fa-user fa-fw "></i> Área do Cidadão</button>   
+    <button id="loginColaborator" type="button" class="btn btn-primary" onclick="window.location.href='LoginColaborator.html'"><i class="fas fa-user-tie"></i> Login Colaboradores</button>
+
+</nav>
+</div>
+</header> 
+
+
+
+
+<!-- FORMULÁRIO -->
+<!-- Dadsos pessoais -->
+<body>
+
+    
+                <div id="form1" style =" margin-top: 5%;)">
+                <h2 style="font-size: 160%;"> PREENCHA AQUI O SEU FORMULÁRIO DE OCORRÊNCIA </h2>
+                <br>
+                
+
+    <div class="container-fluid">
+             <div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
+        <div class="wrapper wrapper--w680">
+            <div class="card card-4">
+                <div class="card-body">
+                    
+                    <label id="sliders" style="font-weight: bold;" class="label">Anónimo:                      
+                    <label class="switch"> 
+                    <input type="checkbox" id="anon"><span class="slider round"></span> </label>  </label>
+                    <br>
+
+                    <h3 class="subtitle">Dados Pessoais</h3>
+                    <form id="Occurrencesform">
+                        <div class="row row-space">
+                            <div class="col-6">
+                                <div class="input-group">
+                                    <label class="label">Nome: </label>
+                                    <input class="input--style-4" type="text" id="name_Denouncer" name="name_Denouncer">
+                                </div>
+                            </div>
+                            <div class="col-6" style="padding-left: 2.5rem;">
+                                <div class="input-group">
+                                     <label class="label">Género: </label>
+                                    <div class="p-t-10"> 
+                                        <label class="radio-container m-r-45">Masculino
+                                            <input type="radio" checked="checked" name="gender_Denouncer" id="gender_Denouncer" value="Masculino">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="radio-container m-r-45">Feminino
+                                            <input type="radio" name="gender_Denouncer"id="gender_Denouncer"  value="Feminino">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="radio-container">Outro
+                                            <input type="radio" name="gender_Denouncer" id="gender_Denouncer" value= "Outro">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="row row-space">  
+                            
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Nº CC: </label>
+                                    <input class="input--style-4" type="tel" id="cc_Denouncer" name="cc_Denouncer">
+                                </div>
+                            </div>
+                        <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Telefone: </label>
+                                    <input class="input--style-4" type="tel" id="phone_number_Denouncer" name="phone_number_Denouncer">
+                                </div>
+                            </div>
+    
+                            <div class="col-3">
+                                <div class="input-group">
+                                    <label class="label">Data-Nascimento: </label>
+                                    <input class="input--style-4" type="date" id="birthdate_Denouncer" name="birthdate_Denouncer">
+                                </div>
+                            </div>
+                            </div>
+                        <div class="row row-space">
+                            <div class="col-6">
+                                <div class="input-group">
+                                    <label class="label">Morada: </label>
+                                    <input class="input--style-4" type="text" id="address_Denouncer" name="address_Denouncer">
+                                </div>
+                            </div>
+                            
+                            
+                             <div class="col-3">
+                                <div class="input-group">
+                                    <label class="label">Localidade: </label>
+                                    <input class="input--style-4" type="text" id="county_Denouncer" name="county_Denouncer">
+                                </div>
+                            </div>
+                                                       <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Distrito: </label>
+                                    <input class="input--style-4" type="text" id="district_Denouncer" name="district_Denouncer">
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class= "row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Código-Postal: </label>
+                                    <input class="input--style-4" type="text" id="post_code_Denouncer" name="post_code_Denouncer">
+                                </div>
+                            </div>
+                            
+                                <div class="col-6">
+                                <div class="input-group">
+                                    <label class="label">Email: </label>
+                                    <input class="input--style-4" type="email" id="email_Denouncer" name="email_Denouncer">
+                                </div>
+                            </div>
+                        </div>
+
+                         <div class= "row row-space">
+                            <div class="col-8">
+                                <label class="label">Natureza: </label>
+                                <div class="input-group">
+                                    <select class="selectbtn custom-select" id="designation_Crime_Nature" name="designation_Crime_Nature">
+                                    <option value="0">Selecione a Natureza:</option>
+
+                                  </select>
+                                </div>
+                            </div>
+    
+                                <div class="col-3">
+                                <label class="label">Gravidade: </label>
+                                <div class="input-group">
+                                 <select class="selectbtn custom-select" id="degree_of_emergency_Crime_Nature" name="degree_of_emergency_Crime_Nature">
+                                        <option value="0">Selecione a Gravidade:</option>
+                                        <option value="Moderado">Moderado</option>
+                                        <option value="Grave">Grave</option>
+                                        <option value="Muito Grave">Muito Grave</option>
+                                      </select>
+                                </div>
+                            </div>
+                            </div>
+                            
+                            <div class="row row-space">
+                                <div class="col-8">
+                                <label class="label">Descrição: </label>
+                                <div class="col-md-14">
+                                    <textarea rows="5" class="form-control form-control-line" id="descriptionOccurrence" ></textarea>
+                                </div>
+                            </div>
+                            </div>
+                                                    
+                        <br>
+                        <br>
+                        
+                        
+                        
+                       <h4 class="subtitle" style="margin-top: 3%">Dados da Entidade</h3> 
+    
+    <!-- ENTITY DATA -->
+                        <!-- ENTITY DATA -->
+                            <div class="row row-space">
+                            <div class="col-8">
+                                <label class="label">Entidades Registadas: </label>
+                                <div class="input-group">
+                                    <select class="selectbtn custom-select" id="entitieslist" name="entitieslist">
+                                        <option value="0">Selecione a entidade:</option>
+                                        <option value="1">Outra</option>
+                                        
+                                      </select>
+                                </div>
+                            </div>
+                            
+                            <div class="col-2">
+
+                                </div>
+                            
+                                </div>
+                          <div class="row row-space"> 
+                             <div class="col-8">
+                                <div class="input-group">
+                                    <label class="label">Designação: </label>
+                                    <input class="input--style-4" type="text" id="designation_Location" name="designation_Location">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">NIF: </label>
+                                    <input class="input--style-4" type="text" id="nif_Location" name="nif_Location">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row row-space">
+                            <div class="col-6">
+                                <div class="input-group">
+                                    <label class="label">Morada: </label>
+                                    <input class="input--style-4" type="text" id="address_Location" name="address_Location">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Localidade: </label>
+                                    <input class="input--style-4" type="text" id="county_Location" name="county_Location">
+                                </div>
+                            </div>
+                           <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Distrito: </label>
+                                    <input class="input--style-4" type="text" id="district_Location" name="district_Location">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Código-Postal: </label>
+                                    <input class="input--style-4" type="text" id="post_code_Location" name="post_code_Location">
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <div class="row row-space">
+                            <div class="col-6">
+                                <div class="input-group">
+                                    <label class="label">Email: </label>
+                                    <input class="input--style-4" type="email" id="email_Location" name="email_Location">
+                                </div>
+                            </div>
+                            
+                            
+                             <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Telefone: </label>
+                                    <input class="input--style-4" type="tel" id="phone_number_Location" name="phone_number_Location">
+                                </div>
+                            </div>
+
+                        </div>
+   <br>
+   <br>
+                        <div class="p-t-15 row justify-content-center">
+                            <button class="btn btn-primary" type="submit" onclick="return validation()">Submeter</button>
+                        </div>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <br>
+    <br>
+
+<div id="divFooter" class="container">
+		</div>
+
+<!-- Footer -->
+<div id="divFooter" class="container"></div>
+
+<footer class="page-footer font-small stylish-color-dark pt-4">
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-4 mx-auto">
+
+        <!-- Content -->
+        <p><img src="https://www.psp.pt//PublishingImages/logo.svg" style="width: 70%; height:70%"> </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-2" style="font-size: 90%">Links Úteis</h5>
+
+        <ul class="list-unstyled" style="font-size: 90%">
+          <li>
+            <a href="https://www.google.com/search?safe=active&rlz=1C5CHFA_enPT900PT900&tbs=lf:1,lf_ui:2&tbm=lcl&sxsrf=ALeKk03hw6rjk6BCFubQkk3CNz80sEbh2g:1609618795393&q=contactos+psp&rflfq=1&num=10&sa=X&ved=2ahUKEwidqJekif7tAhVGecAKHct1CekQjGp6BAgFED0&biw=1600&bih=912#rlfi=hd:;si:;mv:[[41.6044652,-8.2379569],[41.116633799999995,-8.791645899999999]];tbs:lrf:!1m4!1u2!2m2!2m1!1e1!2m1!1e2!3sIAE,lf:1,lf_ui:2" >Contactos</a>
+          </li>
+          <li>
+            <a href="Politica_Privacidade.html">Política de Privacidade</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+      
+      <div class="col-md-2 mx-auto">
+      <h5 class="font-weight-bold text-uppercase mt-3 mb-2" style="font-size: 90%">Ferramentas</h5> 
+      <ul class="list-unstyled" style="font-size: 90%">
+          <li>
+         <a href="https://portalsocial.psp.pt/" target="_blank">Portal Social</a>
+          </li>
+        <li>
+          <a href="https://webmail.rnsi.mai.gov.pt/owa/auth/logon.aspx?replaceCurrent=1&url=https%3a%2f%2fwebmail.rnsi.mai.gov.pt%2fOWA%2f" target="_blank"> Webemail</a>
+        </li>
+ 
+      </div>
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-2" style="font-size: 90%">Reboques</h5>
+
+        <ul class="list-unstyled" style="font-size: 90%">
+          <li>
+        O seu carro foi rebocado?
+          </li>
+          <li>
+        Envie um SMS para 3838
+          </li>
+          <li>
+        e escreva:
+          </li>
+          <li>
+        REBOQUE (espaço)
+          </li>
+          <li>
+        MATRÍCULA
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 mx-auto">
+      </br>
+
+        <!-- Links -->
+        <div>
+        <img src="https://www.sg.mai.gov.pt/Style%20Library/sgmai/images/logo_sgmai.png" style="width: 80%; height:80%">
+			
+			</div>
+			</br>
+			  <div>
+			 <img src="https://logodownload.org/wp-content/uploads/2018/04/governo-portugal-12.png" style="width: 80%; height:80%">
+			</div>
+ 
+      </div>
+
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  
+  <!-- Social buttons -->
+  <ul class="list-unstyled list-inline text-center">
+    <li class="list-inline-item">
+      <a class="btn-floating btn-fb mx-1" href="https://www.facebook.com/policiasegurancapublica">
+        <i class="fab fa-facebook-f"> </i>
+      </a>
+    </li>
+    <li class="list-inline-item ">
+      <a class="btn-floating btn-tw mx-1" href="https://twitter.com/PSP_Portugal">
+        <i class="fab fa-twitter"> </i>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="btn-floating btn-instagram mx-1" href="https://www.instagram.com/policiasegurancapublica/">
+        <i class="fab fa-instagram"> </i>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="btn-floating btn-yt mx-1" href="https://www.youtube.com/user/DNPSP">
+        <i class="fab fa-youtube"> </i>
+      </a>
+    </li>
+  </ul>
+  <!-- Social buttons -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://psp.pt"> PSP PORTUGAL </a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+</div>
+        <script src="validation.js"></script>
+
+        <script>
+        
+        //SWITCH ANONYMOUS FORM
+        let checkBox = document.querySelector("input[id=anon]")
+        checkBox.addEventListener('change', function() {
+        
+			if (checkBox.checked == true) 
+			{ 
+			    document.getElementById("name_Denouncer").readOnly = true;
+			    document.getElementById("cc_Denouncer").readOnly = true;
+			    document.getElementById("phone_number_Denouncer").readOnly = true;
+			    document.getElementById("birthdate_Denouncer").readOnly = true;
+			    document.getElementById("address_Denouncer").readOnly = true;
+			    document.getElementById("county_Denouncer").readOnly = true;
+			    document.getElementById("district_Denouncer").readOnly = true;
+			    document.getElementById("post_code_Denouncer").readOnly = true;
+			    document.getElementById("email_Denouncer").readOnly = true;
+            } 
+            else {
+			    document.getElementById("name_Denouncer").readOnly = false;
+			    document.getElementById("cc_Denouncer").readOnly = false;
+			    document.getElementById("phone_number_Denouncer").readOnly = false;
+			    document.getElementById("birthdate_Denouncer").readOnly = false;
+			    document.getElementById("address_Denouncer").readOnly = false;
+			    document.getElementById("county_Denouncer").readOnly = false;
+			    document.getElementById("district_Denouncer").readOnly = false;
+			    document.getElementById("post_code_Denouncer").readOnly = false;
+			    document.getElementById("email_Denouncer").readOnly = false;
+                
+            } });
+        
+                //Populate Select Dropdown with Crime Natures
+            var select = document.getElementById("designation_Crime_Nature");
+            fetch('https://54d82a4bef854785886ab91f701b592a.vfs.cloud9.us-east-1.amazonaws.com/CrimesNature/')
+            .then(res => res.json())
+            .then((out) => {
+                $.each(out, function(index, value) {
+    select.options[select.options.length] = new Option(value.designation, value.id_crime_nature);
+ });
+            }).catch(err => console.error(err));
+            
+                        //Populate Select Dropdown with Entities
+            var select2 = document.getElementById("entitieslist");
+            fetch('https://54d82a4bef854785886ab91f701b592a.vfs.cloud9.us-east-1.amazonaws.com/LocationsRegisted/')
+            .then(res => res.json())
+            .then((out) => {
+                $.each(out, function(index, value) {
+    select2.options[select2.options.length] = new Option(value.designation, value.id_location);
+ });
+            }).catch(err => console.error(err));
+            
+            
+                    //Select List on change fill data
+        document.getElementById('entitieslist').addEventListener('change', function() {
+  var idEntitySelected = select2.options[select2.selectedIndex].value;
+  if (select2.selectedIndex != 0 && select2.selectedIndex !=1){
+            fetch('https://54d82a4bef854785886ab91f701b592a.vfs.cloud9.us-east-1.amazonaws.com/Locations/'+ idEntitySelected)
+            .then(res => res.json())
+            .then((out) => {
+                $.each(out, function(index, value) {
+                    document.getElementById("designation_Location").value = value.designation;
+                    document.getElementById("nif_Location").value = value.nif;
+                    document.getElementById("address_Location").value = value.address;
+                    document.getElementById("phone_number_Location").value = value.phone_number;
+                    document.getElementById("district_Location").value = value.district;
+                    document.getElementById("county_Location").value = value.county;
+                    document.getElementById("post_code_Location").value = value.post_code;
+                    document.getElementById("email_Location").value = value.email;
+                });
+            }).catch(err => console.error(err));
+
+  
+} else {
+                    document.getElementById("designation_Location").value = "";
+                    document.getElementById("nif_Location").value = "";
+                    document.getElementById("address_Location").value = "";
+                    document.getElementById("phone_number_Location").value = "";
+                    document.getElementById("district_Location").value = "";
+                    document.getElementById("county_Location").value = "";
+                    document.getElementById("post_code_Location").value = "";
+                    document.getElementById("email_Location").value = "";
+                    
+    
+}
+            
+        });
+            
+    
+        //Submit form
+        
+        //Create User - NOT ACTIVE, MAYBE USE LATER
+    
+                   const occurrencesform = document.getElementById('Occurrencesform');
+
+            
+            occurrencesform.addEventListener('submit', function(e){
+                e.preventDefault();
+                if (document.getElementById("email_Denouncer").value != null ){
+                const email = document.getElementById("email_Denouncer").value;} 
+let id_user;
+let id_denouncer;
+                
+                /*
+                 fetch('https://54d82a4bef854785886ab91f701b592a.vfs.cloud9.us-east-1.amazonaws.com/Users', {
+                    headers: {
+                        "Content-Type": "application/x-www-form-urlencoded"
+                    },
+                    method: 'post',
+                    body: `email=${email}`
+                }) */
+                
+                fetchByBreed(); 
+
+            //Get user_id to Operational
+
+async function fetchByBreed() {
+try {
+const result = fetch(`https://54d82a4bef854785886ab91f701b592a.vfs.cloud9.us-east-1.amazonaws.com/UserUnregisted/`)
+const response = await result
+const jsonData = await response.json()
+id_user = jsonData[0].id;
+fetchDenCreate()
+
+console.log(id_user)
+
+} catch (e) {
+throw Error(e) } }
+
+              
+function fetchDenCreate(){  
+    
+//Create Denouncer
+
+			if (checkBox.checked == false) 
+			{ 
+                const name_Denouncer = document.getElementById("name_Denouncer").value
+                const gender_Denouncer = $('input[name="gender_Denouncer"]:checked').val();
+                const cc__Denouncer = document.getElementById("cc_Denouncer").value
+                const phone_number_Denouncer = document.getElementById("phone_number_Denouncer").value
+                const birthdate_Denouncer = document.getElementById("birthdate_Denouncer").value
+                const address_Denouncer= document.getElementById("address_Denouncer").value
+                const county_Denouncer = document.getElementById("county_Denouncer").value
+                const district_Denouncer = document.getElementById("district_Denouncer").value
+                const post_code_Denouncer = document.getElementById("post_code_Denouncer").value
+                
+                            
+                fetch('https://54d82a4bef854785886ab91f701b592a.vfs.cloud9.us-east-1.amazonaws.com/Denouncers', {
+                    headers: {
+                        "Content-Type": "application/x-www-form-urlencoded"
+                    },
+                    method: 'post',
+                    body: `id_user=${id_user}&address=${address_Denouncer}&gender=${gender_Denouncer}&cc_number=${cc__Denouncer}&post_code=${post_code_Denouncer}&county=${county_Denouncer}&district=${district_Denouncer}&name=${name_Denouncer}&phone_number=${phone_number_Denouncer}&birth_date=${birthdate_Denouncer}`
+                }) } 
+                
+          atributteDenouncer();
+                
+}
+
+// Get the Denouncer created to associate with Request
+function atributteDenouncer(){
+	if (checkBox.checked == true) {
+	    {
+id_denouncer = 1;
+fetchSetLocation();
+
+}
+	}
+			 
+else {
+    fetchGetDenouncer();
+async function fetchGetDenouncer(){
+const cc_Denouncer = document.getElementById("cc_Denouncer").value
+try {
+const result = fetch(`https://54d82a4bef854785886ab91f701b592a.vfs.cloud9.us-east-1.amazonaws.com/readCC/`+ cc_Denouncer)
+const response = await result
+const jsonData = await response.json()
+id_denouncer = jsonData[0].id_denouncer;
+
+
+fetchSetLocation();
+
+} catch (e) {
+throw Error(e) } } 
+}
+}
+    let id_location;
+    let id_Crime_Nature = document.getElementById("designation_Crime_Nature").value
+    let degree_of_emergency = document.getElementById("degree_of_emergency_Crime_Nature").value
+    let descriptionOccurrence= document.getElementById("descriptionOccurrence").value
+    let address_Location = document.getElementById("address_Location").value
+    let county_Location= document.getElementById("county_Location").value
+    let district_Location= document.getElementById("district_Location").value
+    let post_code_Location= document.getElementById("post_code_Location").value
+
+function fetchSetLocation(){
+    if (document.getElementById("entitieslist").value == 1){
+            fetch('https://54d82a4bef854785886ab91f701b592a.vfs.cloud9.us-east-1.amazonaws.com/Locations', {
+                    headers: {
+                        "Content-Type": "application/x-www-form-urlencoded"
+                    },
+                    method: 'post',
+                    body: `address=${address_Location}&county=${county_Location}&district=${district_Location}&post_code=${post_code_Location}`
+                })
+                console.log('aqui')
+                    fetchGetIDLocation2();
+    
+async function fetchGetIDLocation2() {
+try {
+const result = fetch(`https://54d82a4bef854785886ab91f701b592a.vfs.cloud9.us-east-1.amazonaws.com/LocationsAddress/` + address_Location)
+const response = await result
+const jsonData = await response.json()
+id_location = jsonData[0].id_location;
+fetchRequestCreate();
+
+console.log('estou eu')
+console.log(jsonData[0].id_location)
+
+
+} catch (e) {
+throw Error(e) } }
+        
+    } else {
+        id_location = document.getElementById("entitieslist").value;
+        fetchRequestCreate();
+    }
+}
+//IF THE ENTITY IS GOING TO BE REGISTED OR NOT
+
+
+function fetchRequestCreate(){
+
+let date = new Date();
+let dd = String(date.getDate()).padStart(2, '0');
+let mm = String(date.getMonth() + 1).padStart(2, '0'); //January is 0!
+let yyyy = date.getFullYear();
+
+let today = yyyy + '-' + mm + '-' + dd;
+    let today1 = new Date();
+    let time = today1.getHours() + ":" + today1.getMinutes() + ":" + today1.getSeconds();
+    let state= "Aguardar";
+    let type= "Online";
+    
+    
+                    fetch('https://54d82a4bef854785886ab91f701b592a.vfs.cloud9.us-east-1.amazonaws.com/Requests', {
+                    headers: {
+                        "Content-Type": "application/x-www-form-urlencoded"
+                    },
+                    method: 'post',
+                    body: `id_crime_nature=${id_Crime_Nature}&degree_of_emergency_Request=${degree_of_emergency}&description_Request=${descriptionOccurrence}&id_location=${id_location}&id_denouncer=${id_denouncer}&time_Request=${time}&date_Request=${today}&state_Request=${state}&type_Request=${type}`
+                })    .then(function (response) {Swal.fire(
+                      '',
+                      'Pedido de Ocorrência criado com sucesso!',
+                      'success'
+                    ).then(  function(){ 
+                          window.location.reload();
+                       });
+                     
+                    
+                }).catch(function(err) {console.log(err);})
+}
+            
+                
+            
+            });
+            
+        
+            
+  
+        </script>
+        
+
+</body>
+
+</html>
